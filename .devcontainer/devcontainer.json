@@ -1,0 +1,19 @@
+{
+  "name": "Groceries Demo Dev",
+  "dockerComposeFile": "../grocery-infra/docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postCreateCommand": "npm --workspace ./grocery-web install && npm --workspace ./grocery-api install",
+  "forwardPorts": [3000, 5173]
+}

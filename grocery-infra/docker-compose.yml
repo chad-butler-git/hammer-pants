@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ../grocery-api
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../grocery-api:/app
+      - /app/node_modules
+      - ./sample-data:/app/sample-data
+      - ../grocery-shared:/app/../grocery-shared
+    restart: unless-stopped
+
+  web:
+    image: node:18-slim
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+      - VITE_API_URL=http://localhost:3001/api
+    volumes:
+      - ../grocery-web:/app
+    depends_on:
+      - api
+    restart: unless-stopped
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+
+volumes:
+  sample-data:
+    driver: local

@@ -1,0 +1,30 @@
+{
+  "name": "grocery-infra",
+  "version": "0.1.0",
+  "description": "Infrastructure for grocery application",
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose build",
+    "down": "docker-compose down",
+    "gen-data": "node scripts/generateSampleData.js",
+    "import-data": "node scripts/importSampleData.js",
+    "test": "jest --coverage",
+    "sca-scan": "curl -sSfL https://raw.githubusercontent.com/google/osv-scanner/main/install.sh | sh -s -- -b . && chmod +x ./osv-scanner && ./osv-scanner --recursive .",
+    "verify-vulns": "node scripts/verifyVulns.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "axios": "^1.6.7",
+    "grocery-shared": "file:../grocery-shared",
+    "joi": "^17.13.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nock": "^13.5.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "1.2.9"
+  }
+}
