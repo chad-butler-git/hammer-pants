@@ -8,7 +8,8 @@ const Joi = require('joi');
 const itemSchema = Joi.object({
   id: Joi.string().guid({ version: 'uuidv4' }).required(),
   name: Joi.string().required(),
-  category: Joi.string().required()
+  category: Joi.string().required(),
+  notes: Joi.string().allow('').optional()
 });
 
 // Aisle schema
@@ -35,7 +36,8 @@ const shoppingListSchema = Joi.object({
   items: Joi.array().items(Joi.object({
     id: Joi.string().guid({ version: 'uuidv4' }).required(),
     name: Joi.string().required(),
-    category: Joi.string().required()
+    category: Joi.string().required(),
+    notes: Joi.string().allow('').optional()
   })).default([])
 });
 
@@ -45,7 +47,8 @@ const routeStepSchema = Joi.object({
   items: Joi.array().items(Joi.object({
     id: Joi.string().guid({ version: 'uuidv4' }).required(),
     name: Joi.string().required(),
-    category: Joi.string().required()
+    category: Joi.string().required(),
+    notes: Joi.string().allow('').optional()
   })).default([])
 });
 

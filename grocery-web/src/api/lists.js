@@ -99,3 +99,31 @@ export const removeItemFromList = async (listId, itemId) => {
     throw error;
   }
 };
+
+/**
+ * Generate a share token for a shopping list
+ * @param {string} listId - Shopping list ID
+ * @returns {Promise<Object>} Object containing token and shareUrl
+ */
+export const shareList = async (listId) => {
+  try {
+    return await api.post(`/lists/${listId}/share`);
+  } catch (error) {
+    console.error(`Error sharing shopping list ${listId}:`, error);
+    throw error;
+  }
+};
+
+/**
+ * Access a shared shopping list using a token
+ * @param {string} token - Share token
+ * @returns {Promise<Object>} Shared shopping list
+ */
+export const getSharedList = async (token) => {
+  try {
+    return await api.get(`/shared/${token}`);
+  } catch (error) {
+    console.error('Error accessing shared shopping list:', error);
+    throw error;
+  }
+};

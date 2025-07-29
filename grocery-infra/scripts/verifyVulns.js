@@ -9,6 +9,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { parseXmlFile } = require('./xmlImport');
 
 // Expected CVE IDs that should be detected
 // Note: False-positive vulnerabilities are intentionally excluded from this list
@@ -16,7 +17,10 @@ const path = require('path');
 const EXPECTED_VULNERABILITIES = [
   'CVE-2021-23337', // lodash in grocery-api
   'CVE-2022-23529', // jsonwebtoken in grocery-api
-  'CVE-2021-3762'   // validator in grocery-shared
+  'CVE-2021-3762',  // validator in grocery-shared
+  'CVE-2024-41818', // fast-xml-parser in grocery-infra
+  'CVE-2022-21680', // marked in grocery-shared
+  'CVE-2022-21648'  // marked in grocery-shared
 ];
 
 // Run osv-scanner and capture JSON output
@@ -94,6 +98,56 @@ function verifyVulnerabilities(scanResults) {
   }
 }
 
+/**
+ * Test XML parsing functionality to ensure it's part of the data flow
+ * This ensures the fast-xml-parser vulnerability is actually exploitable
+ */
+function testXmlParsing() {
+  console.log('Testing XML parsing functionality...');
+  
+  try {
+    // Path to the XML file
+    const xmlFilePath = path.join(__dirname, '..', 'sample-data', 'stores.xml');
+    
+    // Check if the XML file exists
+    if (!fs.existsSync(xmlFilePath)) {
+      console.error('❌ XML file not found:', xmlFilePath);
+      return false;
+    }
+    
+    // Parse the XML file
+    const xmlData = parseXmlFile(xmlFilePath);
+    
+    // Verify that the XML was parsed correctly
+    if (xmlData && xmlData.stores && xmlData.stores.store) {
+      const storeCount = Array.isArray(xmlData.stores.store)
+        ? xmlData.stores.store.length
+        : 1;
+      
+      console.log(`✅ Successfully parsed ${storeCount} stores from XML`);
+      return true;
+    } else {
+      console.error('❌ Failed to parse XML data correctly');
+      return false;
+    }
+  } catch (error) {
+    console.error('❌ Error testing XML parsing:', error.message);
+    return false;
+  }
+}
+
 // Main execution
+console.log('Verifying vulnerabilities and testing functionality...');
+
+// Test XML parsing to ensure it's part of the data flow
+const xmlParsingWorks = testXmlParsing();
+
+// Run vulnerability scanner
 const scanResults = runOsvScanner();
 verifyVulnerabilities(scanResults);
+
+// Final check
+if (!xmlParsingWorks) {
+  console.error('\n❌ XML parsing test failed. The fast-xml-parser vulnerability may not be exploitable.');
+  process.exit(1);
+}

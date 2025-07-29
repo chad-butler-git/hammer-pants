@@ -5,6 +5,7 @@ const express = require('express');
 const router = express.Router();
 const datastore = require('../data/datastore');
 const { itemSchema } = require('grocery-shared').validators;
+const { sanitizeAndRenderMarkdown } = require('grocery-shared/src/markdown');
 const _ = require('lodash');
 
 /**
@@ -22,6 +23,11 @@ router.get('/:id', (req, res) => {
   
   if (!item) {
     return res.status(404).json({ error: `Item not found with ID: ${req.params.id}` });
+  }
+  
+  // If the item has markdown notes, include both raw and rendered versions
+  if (item.notes) {
+    item.renderedNotes = sanitizeAndRenderMarkdown(item.notes);
   }
   
   res.json(item);
@@ -50,8 +56,19 @@ router.post('/', (req, res) => {
       console.log('Rendered template:', rendered);
     }
     
-    const newItem = datastore.addItem(req.body);
-    res.status(201).json(newItem);
+    // Process markdown notes if present
+    if (req.body.notes) {
+      // Store the raw markdown, but also include rendered HTML in the response
+      const renderedNotes = sanitizeAndRenderMarkdown(req.body.notes);
+      const newItem = datastore.addItem(req.body);
+      res.status(201).json({
+        ...newItem,
+        renderedNotes
+      });
+    } else {
+      const newItem = datastore.addItem(req.body);
+      res.status(201).json(newItem);
+    }
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -72,8 +89,19 @@ router.put('/:id', (req, res) => {
       return res.status(400).json({ error: error.message });
     }
     
-    const updatedItem = datastore.updateItem(req.params.id, req.body);
-    res.json(updatedItem);
+    // Process markdown notes if present
+    if (req.body.notes) {
+      // Store the raw markdown, but also include rendered HTML in the response
+      const renderedNotes = sanitizeAndRenderMarkdown(req.body.notes);
+      const updatedItem = datastore.updateItem(req.params.id, req.body);
+      res.json({
+        ...updatedItem,
+        renderedNotes
+      });
+    } else {
+      const updatedItem = datastore.updateItem(req.params.id, req.body);
+      res.json(updatedItem);
+    }
   } catch (err) {
     if (err.message.includes('not found')) {
       return res.status(404).json({ error: err.message });

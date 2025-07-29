@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Store Layout XML File
+  
+  VULNERABILITY: CVE-2024-41818 (fast-xml-parser@3.x)
+  This file is parsed using the vulnerable fast-xml-parser@3.21.1 package.
+  The vulnerability is a Regular Expression Denial of Service (ReDoS) issue.
+  
+  When upgrading to fast-xml-parser@4.4.1+, the API changes significantly:
+  - Function-based API becomes class-based (XMLParser class)
+  - Option names change
+  - Parsing method signature changes
+  - Different handling of attributes and values
+-->
+<stores>
+  <store id="store-001">
+    <name>Downtown Grocery</name>
+    <address>123 Main Street, Downtown, City 12345</address>
+    <layout>
+      <aisles>
+        <aisle number="1">
+          <categories>
+            <category>Produce</category>
+            <category>Fresh Fruits</category>
+            <category>Vegetables</category>
+          </categories>
+          <description>Fresh produce section at the front of the store</description>
+        </aisle>
+        <aisle number="2">
+          <categories>
+            <category>Dairy</category>
+            <category>Eggs</category>
+            <category>Cheese</category>
+          </categories>
+          <description>Refrigerated dairy section along the wall</description>
+        </aisle>
+        <aisle number="3">
+          <categories>
+            <category>Meat</category>
+            <category>Poultry</category>
+            <category>Seafood</category>
+          </categories>
+          <description>Fresh meat and seafood counter</description>
+        </aisle>
+        <aisle number="4">
+          <categories>
+            <category>Bakery</category>
+            <category>Bread</category>
+            <category>Pastries</category>
+          </categories>
+          <description>Fresh baked goods and bread</description>
+        </aisle>
+        <aisle number="5">
+          <categories>
+            <category>Frozen</category>
+            <category>Ice Cream</category>
+            <category>Frozen Meals</category>
+          </categories>
+          <description>Frozen foods section</description>
+        </aisle>
+        <aisle number="6">
+          <categories>
+            <category>Snacks</category>
+            <category>Chips</category>
+            <category>Crackers</category>
+          </categories>
+          <description>Snack foods and chips</description>
+        </aisle>
+        <aisle number="7">
+          <categories>
+            <category>Beverages</category>
+            <category>Soda</category>
+            <category>Juice</category>
+          </categories>
+          <description>Drinks and beverages</description>
+        </aisle>
+        <aisle number="8">
+          <categories>
+            <category>Condiments</category>
+            <category>Sauces</category>
+            <category>Spices</category>
+          </categories>
+          <description>Condiments, sauces, and spices</description>
+        </aisle>
+        <aisle number="9">
+          <categories>
+            <category>Canned Goods</category>
+            <category>Soups</category>
+            <category>Beans</category>
+          </categories>
+          <description>Canned and jarred foods</description>
+        </aisle>
+        <aisle number="10">
+          <categories>
+            <category>Household</category>
+            <category>Cleaning</category>
+            <category>Paper Products</category>
+          </categories>
+          <description>Household items and cleaning supplies</description>
+        </aisle>
+        <aisle number="11">
+          <categories>
+            <category>Personal Care</category>
+            <category>Health</category>
+            <category>Beauty</category>
+          </categories>
+          <description>Personal care and health items</description>
+        </aisle>
+      </aisles>
+    </layout>
+  </store>
+  
+  <store id="store-002">
+    <name>Suburban Market</name>
+    <address>456 Oak Avenue, Suburbia, City 12346</address>
+    <layout>
+      <aisles>
+        <aisle number="1">
+          <categories>
+            <category>Produce</category>
+            <category>Organic Fruits</category>
+            <category>Organic Vegetables</category>
+          </categories>
+          <description>Organic produce section</description>
+        </aisle>
+        <aisle number="2">
+          <categories>
+            <category>Dairy</category>
+            <category>Milk</category>
+            <category>Yogurt</category>
+          </categories>
+          <description>Dairy products and alternatives</description>
+        </aisle>
+        <aisle number="3">
+          <categories>
+            <category>Deli</category>
+            <category>Prepared Foods</category>
+            <category>Salads</category>
+          </categories>
+          <description>Deli counter and prepared foods</description>
+        </aisle>
+        <aisle number="4">
+          <categories>
+            <category>Bakery</category>
+            <category>Artisan Bread</category>
+            <category>Cakes</category>
+          </categories>
+          <description>Bakery with fresh baked goods</description>
+        </aisle>
+        <aisle number="5">
+          <categories>
+            <category>Meat</category>
+            <category>Grass-fed Beef</category>
+            <category>Free-range Poultry</category>
+          </categories>
+          <description>Premium meat selection</description>
+        </aisle>
+        <aisle number="6">
+          <categories>
+            <category>Seafood</category>
+            <category>Fresh Fish</category>
+            <category>Shellfish</category>
+          </categories>
+          <description>Fresh seafood counter</description>
+        </aisle>
+        <aisle number="7">
+          <categories>
+            <category>Frozen</category>
+            <category>Organic Frozen</category>
+            <category>Desserts</category>
+          </categories>
+          <description>Premium frozen foods</description>
+        </aisle>
+        <aisle number="8">
+          <categories>
+            <category>International</category>
+            <category>Asian</category>
+            <category>Mediterranean</category>
+          </categories>
+          <description>International and specialty foods</description>
+        </aisle>
+        <aisle number="9">
+          <categories>
+            <category>Beverages</category>
+            <category>Coffee</category>
+            <category>Tea</category>
+          </categories>
+          <description>Premium beverages</description>
+        </aisle>
+        <aisle number="10">
+          <categories>
+            <category>Snacks</category>
+            <category>Nuts</category>
+            <category>Dried Fruits</category>
+          </categories>
+          <description>Healthy snacks and nuts</description>
+        </aisle>
+        <aisle number="11">
+          <categories>
+            <category>Health</category>
+            <category>Vitamins</category>
+            <category>Supplements</category>
+          </categories>
+          <description>Health and wellness section</description>
+        </aisle>
+        <aisle number="12">
+          <categories>
+            <category>Household</category>
+            <category>Eco-friendly</category>
+            <category>Natural Cleaning</category>
+          </categories>
+          <description>Eco-friendly household products</description>
+        </aisle>
+      </aisles>
+    </layout>
+  </store>
+  
+  <store id="store-003">
+    <name>Neighborhood Mini-Mart</name>
+    <address>789 Elm Street, Neighborhood, City 12347</address>
+    <layout>
+      <aisles>
+        <aisle number="1">
+          <categories>
+            <category>Essentials</category>
+            <category>Bread</category>
+            <category>Milk</category>
+          </categories>
+          <description>Essential grocery items</description>
+        </aisle>
+        <aisle number="2">
+          <categories>
+            <category>Snacks</category>
+            <category>Beverages</category>
+            <category>Candy</category>
+          </categories>
+          <description>Snacks and drinks</description>
+        </aisle>
+        <aisle number="3">
+          <categories>
+            <category>Frozen</category>
+            <category>Ready Meals</category>
+            <category>Ice Cream</category>
+          </categories>
+          <description>Frozen convenience foods</description>
+        </aisle>
+        <aisle number="4">
+          <categories>
+            <category>Household</category>
+            <category>Personal Care</category>
+            <category>Health</category>
+          </categories>
+          <description>Household and personal items</description>
+        </aisle>
+        <aisle number="5">
+          <categories>
+            <category>Produce</category>
+            <category>Fruits</category>
+            <category>Vegetables</category>
+          </categories>
+          <description>Small produce section</description>
+        </aisle>
+      </aisles>
+    </layout>
+  </store>
+</stores>

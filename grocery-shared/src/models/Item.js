@@ -11,11 +11,13 @@ class Item {
    * @param {string} [config.id] - UUID v4 string (generated if not provided)
    * @param {string} config.name - Item name
    * @param {string} config.category - Item category
+   * @param {string} [config.notes] - Markdown notes for the item (optional)
    */
   constructor(config = {}) {
     this.id = config.id || uuidv4();
     this.name = config.name || '';
     this.category = config.category || '';
+    this.notes = config.notes || '';
 
     // Validate using Joi schema
     const { error } = validators.itemSchema.validate(this);

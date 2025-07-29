@@ -36,7 +36,15 @@ function HomePage() {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Item Selector</h2>
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-xl font-semibold">Item Selector</h2>
+            <Link
+              to="/items/new"
+              className="px-3 py-1 bg-green-500 text-white text-sm rounded hover:bg-green-600"
+            >
+              Add New Item
+            </Link>
+          </div>
           <ItemSelector />
         </div>
       </div>
@@ -51,13 +59,26 @@ function HomePage() {
             <ul className="divide-y divide-gray-200">
               {currentList.items.slice(0, 5).map(item => (
                 <li key={item.id} className="py-2 flex justify-between items-center">
-                  <span>{item.name}</span>
-                  <button
-                    onClick={() => removeItemFromList(item.id)}
-                    className="text-red-500 hover:text-red-700 text-sm"
-                  >
-                    Remove
-                  </button>
+                  <div>
+                    <span>{item.name}</span>
+                    {item.notes && (
+                      <span className="ml-2 text-xs text-blue-500">[has notes]</span>
+                    )}
+                  </div>
+                  <div className="flex space-x-2">
+                    <Link
+                      to={`/items/edit/${item.id}`}
+                      className="text-blue-500 hover:text-blue-700 text-sm"
+                    >
+                      Edit
+                    </Link>
+                    <button
+                      onClick={() => removeItemFromList(item.id)}
+                      className="text-red-500 hover:text-red-700 text-sm"
+                    >
+                      Remove
+                    </button>
+                  </div>
                 </li>
               ))}
             </ul>

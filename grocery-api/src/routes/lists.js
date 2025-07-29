@@ -5,6 +5,7 @@ const express = require('express');
 const router = express.Router();
 const datastore = require('../data/datastore');
 const { shoppingListSchema } = require('grocery-shared').validators;
+const { generateShareToken, verifyShareToken } = require('../utils/auth');
 
 /**
  * GET /lists - List all shopping lists
@@ -126,6 +127,60 @@ router.delete('/:id', (req, res) => {
   }
   
   res.status(204).end();
+});
+
+/**
+ * POST /lists/:id/share - Generate a share token for a shopping list
+ */
+router.post('/:id/share', (req, res) => {
+  try {
+    const list = datastore.getShoppingListById(req.params.id);
+    
+    if (!list) {
+      return res.status(404).json({ error: `Shopping list not found with ID: ${req.params.id}` });
+    }
+    
+    // Generate a short-lived token for sharing
+    const token = generateShareToken(list.id);
+    
+    // Create a shareable URL
+    const baseUrl = `${req.protocol}://${req.get('host')}`;
+    const shareUrl = `${baseUrl}/api/shared/${token}`;
+    
+    res.json({
+      token,
+      shareUrl,
+      expiresIn: '15m'
+    });
+  } catch (err) {
+    console.error('Error sharing shopping list:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+/**
+ * GET /shared/:token - Access a shared shopping list
+ */
+router.get('/shared/:token', (req, res) => {
+  try {
+    // Verify the share token and extract the list ID
+    const listId = verifyShareToken(req.params.token);
+    
+    // Get the shopping list
+    const list = datastore.getShoppingListById(listId);
+    
+    if (!list) {
+      return res.status(404).json({ error: 'Shared shopping list not found' });
+    }
+    
+    res.json({
+      list,
+      shared: true
+    });
+  } catch (err) {
+    console.error('Error accessing shared shopping list:', err);
+    res.status(401).json({ error: err.message });
+  }
 });
 
 module.exports = router;

@@ -7,10 +7,12 @@
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
+const { importXmlStores } = require('./xmlImport');
 
 // Parse command line arguments
 const args = process.argv.slice(2);
 let baseUrl = 'http://localhost:3000/api';
+let useXml = false;
 
 // Check for --base-url argument
 const baseUrlArgIndex = args.findIndex(arg => arg === '--base-url');
@@ -30,6 +32,11 @@ function readJsonFile(filename) {
   const filePath = path.join(SAMPLE_DATA_DIR, filename);
   if (!fs.existsSync(filePath)) {
     throw new Error(`File not found: ${filePath}`);
+  }
+  
+  // Check for --use-xml argument
+  if (args.includes('--use-xml')) {
+    useXml = true;
   }
   
   const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -123,19 +130,32 @@ async function importSampleData() {
   try {
     // Read sample data files
     const items = readJsonFile('items.json');
-    const stores = readJsonFile('stores.json');
     const shoppingLists = readJsonFile('shoppingLists.json');
-    
-    console.log(`Found ${items.length} items, ${stores.length} stores, and ${shoppingLists.length} shopping lists`);
     
     // Import items
     console.log('Importing items...');
     const itemResults = await importItems(items);
     console.log(`Items: ${itemResults.success} imported, ${itemResults.conflict} skipped (already exist), ${itemResults.error} errors`);
     
-    // Import stores
-    console.log('Importing stores...');
-    const storeResults = await importStores(stores);
+    // Import stores - choose between JSON and XML
+    let storeResults;
+    if (useXml) {
+      console.log('Importing stores from XML...');
+      const xmlResults = await importXmlStores();
+      
+      // Convert XML results to match JSON results format
+      storeResults = {
+        success: xmlResults.filter(r => r.success && !r.skipped).length,
+        conflict: xmlResults.filter(r => r.skipped).length,
+        error: xmlResults.filter(r => !r.success).length
+      };
+    } else {
+      console.log('Importing stores from JSON...');
+      const stores = readJsonFile('stores.json');
+      console.log(`Found ${stores.length} stores in JSON`);
+      storeResults = await importStores(stores);
+    }
+    
     console.log(`Stores: ${storeResults.success} imported, ${storeResults.conflict} skipped (already exist), ${storeResults.error} errors`);
     
     // Import shopping lists
@@ -158,6 +178,16 @@ async function importSampleData() {
 
 // If this script is run directly, import the data
 if (require.main === module) {
+  // Print usage information if --help is provided
+  if (args.includes('--help')) {
+    console.log('Usage: node importSampleData.js [options]');
+    console.log('Options:');
+    console.log('  --base-url <url>  API base URL (default: http://localhost:3000/api)');
+    console.log('  --use-xml         Import stores from XML instead of JSON');
+    console.log('  --help            Show this help message');
+    process.exit(0);
+  }
+
   importSampleData()
     .then(() => {
       process.exit(0);

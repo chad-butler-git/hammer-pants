@@ -5,6 +5,7 @@ import * as itemsApi from '../api/items';
 import * as storesApi from '../api/stores';
 import * as listsApi from '../api/lists';
 import * as routeApi from '../api/route';
+import { toast } from 'react-toastify';
 
 const useAppStore = create(
   persist(
@@ -17,6 +18,7 @@ const useAppStore = create(
       currentRoute: null,
       isLoading: false,
       error: null,
+      shareUrl: null,
 
       // Actions
       setLoading: (isLoading) => set((state) => { state.isLoading = isLoading; }),
@@ -176,6 +178,51 @@ const useAppStore = create(
         }
       },
 
+      // Share list actions
+      shareList: async () => {
+        const { setLoading, setError, currentList } = get();
+        if (!currentList) {
+          setError('No shopping list selected to share');
+          return null;
+        }
+        
+        try {
+          setLoading(true);
+          const shareData = await listsApi.shareList(currentList.id);
+          set((state) => { state.shareUrl = shareData.shareUrl; });
+          
+          // Copy to clipboard
+          navigator.clipboard.writeText(shareData.shareUrl)
+            .then(() => toast.success('Share link copied to clipboard!'))
+            .catch(() => toast.info('Share link generated but could not copy to clipboard'));
+            
+          return shareData;
+        } catch (error) {
+          setError(error);
+          return null;
+        } finally {
+          setLoading(false);
+        }
+      },
+      
+      clearShareUrl: () => {
+        set((state) => { state.shareUrl = null; });
+      },
+      
+      getSharedList: async (token) => {
+        const { setLoading, setError } = get();
+        try {
+          setLoading(true);
+          const sharedData = await listsApi.getSharedList(token);
+          return sharedData;
+        } catch (error) {
+          setError(error);
+          return null;
+        } finally {
+          setLoading(false);
+        }
+      },
+
       // Route actions
       fetchRoute: async (plannerType) => {
         const { setLoading, setError, selectedStore, currentList } = get();
@@ -245,6 +292,7 @@ const useAppStore = create(
         state.selectedStore = null;
         state.currentList = null;
         state.currentRoute = null;
+        state.shareUrl = null;
       }),
     })),
     {
@@ -252,6 +300,7 @@ const useAppStore = create(
       partialize: (state) => ({
         selectedStore: state.selectedStore,
         currentList: state.currentList,
+        shareUrl: state.shareUrl,
       }),
     }
   )

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import useAppStore from '../state/useAppStore';
 
 function ShoppingListPage() {
@@ -11,6 +12,9 @@ function ShoppingListPage() {
     removeItemFromList,
     fetchRoute,
     clearList,
+    shareList,
+    shareUrl,
+    clearShareUrl,
     isLoading,
     error
   } = useAppStore();
@@ -57,6 +61,14 @@ function ShoppingListPage() {
     if (window.confirm('Are you sure you want to clear your shopping list?')) {
       await clearList();
       navigate('/');
+    }
+  };
+  
+  const handleShareList = async () => {
+    try {
+      await shareList();
+    } catch (err) {
+      console.error('Error sharing list:', err);
     }
   };
 
@@ -112,7 +124,14 @@ function ShoppingListPage() {
                       <li key={item.id} className="px-4 py-3 flex justify-between items-center">
                         <div>
                           <p className="font-medium">{item.name}</p>
-                          {item.notes && <p className="text-sm text-gray-600">{item.notes}</p>}
+                          {item.notes && (
+                            <div
+                              className="text-sm text-gray-600 mt-1 markdown-content"
+                              dangerouslySetInnerHTML={{
+                                __html: item.renderedNotes || `<p>${item.notes}</p>`
+                              }}
+                            />
+                          )}
                         </div>
                         <button
                           onClick={() => handleRemoveItem(item.id)}
@@ -139,6 +158,18 @@ function ShoppingListPage() {
             
             <div className="flex space-x-2">
               <button
+                onClick={handleShareList}
+                disabled={isLoading}
+                className={`px-4 py-2 rounded-md ${
+                  isLoading
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-blue-500 hover:bg-blue-600 text-white'
+                }`}
+              >
+                Share List
+              </button>
+              
+              <button
                 onClick={handleClearList}
                 className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
               >
@@ -158,6 +189,39 @@ function ShoppingListPage() {
               </button>
             </div>
           </div>
+          
+          {shareUrl && (
+            <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-md">
+              <h3 className="text-lg font-medium text-blue-800 mb-2">Share Link Generated!</h3>
+              <p className="text-sm text-blue-600 mb-2">
+                This link will expire in 15 minutes:
+              </p>
+              <div className="flex items-center">
+                <input
+                  type="text"
+                  value={shareUrl}
+                  readOnly
+                  className="flex-1 p-2 border border-blue-300 rounded-md text-sm"
+                />
+                <button
+                  onClick={() => {
+                    navigator.clipboard.writeText(shareUrl)
+                      .then(() => toast.success('Copied to clipboard!'))
+                      .catch(() => toast.error('Failed to copy'));
+                  }}
+                  className="ml-2 px-3 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600"
+                >
+                  Copy
+                </button>
+                <button
+                  onClick={clearShareUrl}
+                  className="ml-2 px-3 py-2 bg-gray-500 text-white text-sm rounded-md hover:bg-gray-600"
+                >
+                  Dismiss
+                </button>
+              </div>
+            </div>
+          )}
         </>
       )}
     </div>
