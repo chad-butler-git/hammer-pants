@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "triage_timestamp": "2025-08-04T19:18:06.186673Z",
+    "scan_file": ".helix/scan/npm_scan_2025-08-04_191743.json",
+    "total_analyzed": 20,
+    "use_llm": false,
+    "index_available": true,
+    "index_info": "2025-08-05 01:47:37"
+  },
+  "classifications": {
+    "GHSA-8cf7-32gw-wr33": {
+      "classification": "confirmed",
+      "reason": "Used in security-sensitive files: /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js, /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js",
+      "severity": "cvss:3.1/av:n/ac:l/pr:l/ui:n/s:u/c:h/i:h/a:n",
+      "affected_packages": [
+        "jsonwebtoken"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 4,
+        "has_imports": true
+      }
+    },
+    "GHSA-hjrf-2m68-5959": {
+      "classification": "confirmed",
+      "reason": "Used in security-sensitive files: /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js, /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js",
+      "severity": "cvss:3.1/av:n/ac:h/pr:l/ui:n/s:u/c:l/i:l/a:l",
+      "affected_packages": [
+        "jsonwebtoken"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 4,
+        "has_imports": true
+      }
+    },
+    "GHSA-qwph-4952-7xr6": {
+      "classification": "confirmed",
+      "reason": "Used in security-sensitive files: /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js, /Users/chadbutler/source/hammer-pants/grocery-api/src/utils/auth.js, /Users/chadbutler/source/hammer-pants/grocery-api/test/utils/share-token.test.js",
+      "severity": "cvss:3.1/av:n/ac:h/pr:l/ui:n/s:u/c:l/i:h/a:l",
+      "affected_packages": [
+        "jsonwebtoken"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 4,
+        "has_imports": true
+      }
+    },
+    "GHSA-qqgx-2p2h-9c37": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:l/i:l/a:l",
+      "affected_packages": [
+        "ini"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-3jfq-g458-7qm9": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:l/ac:l/pr:n/ui:r/s:c/c:h/i:h/a:n",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-r628-mhmh-qjhw": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:l/ac:l/pr:n/ui:r/s:c/c:h/i:h/a:n",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-9r2w-394v-53qc": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:l/ac:l/pr:n/ui:r/s:c/c:h/i:h/a:n",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-5955-9wpr-37jh": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:l/ac:l/pr:n/ui:r/s:c/c:h/i:h/a:n",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-qq89-hq3f-393p": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:l/ac:l/pr:n/ui:r/s:c/c:h/i:h/a:n",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-f5x3-32g6-xq36": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:r/s:u/c:n/i:n/a:h",
+      "affected_packages": [
+        "tar"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-67mh-4wv8-2f99": {
+      "classification": "irrelevant",
+      "reason": "Package not found in codebase",
+      "severity": "cvss:3.1/av:n/ac:h/pr:n/ui:r/s:u/c:h/i:n/a:n",
+      "affected_packages": [
+        "esbuild"
+      ],
+      "code_context": {
+        "files_affected": 0,
+        "security_files": 0,
+        "has_imports": false
+      }
+    },
+    "GHSA-p9wx-2529-fp83": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (3 files)",
+      "severity": "cvss:4.0/av:n/ac:l/at:n/pr:n/ui:n/vc:n/vi:n/va:l/sc:n/si:n/sa:n",
+      "affected_packages": [
+        "marked"
+      ],
+      "code_context": {
+        "files_affected": 3,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-5v2h-r2cx-5xgj": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (3 files)",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:h",
+      "affected_packages": [
+        "marked"
+      ],
+      "code_context": {
+        "files_affected": 3,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-rrrm-qjm4-v8hf": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (3 files)",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:h",
+      "affected_packages": [
+        "marked"
+      ],
+      "code_context": {
+        "files_affected": 3,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-qgmg-gppg-76g5": {
+      "classification": "irrelevant",
+      "reason": "Low impact based on usage analysis (7 files)",
+      "severity": "cvss:3.0/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:l",
+      "affected_packages": [
+        "validator"
+      ],
+      "code_context": {
+        "files_affected": 7,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-xx4c-jj58-r7x6": {
+      "classification": "irrelevant",
+      "reason": "Low impact based on usage analysis (7 files)",
+      "severity": "cvss:3.0/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:l",
+      "affected_packages": [
+        "validator"
+      ],
+      "code_context": {
+        "files_affected": 7,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-p3vf-v8qc-cwcr": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (2 files)",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:h/i:h/a:n",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-gx9m-whjm-85jf": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (2 files)",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:c/c:l/i:h/a:h",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-mmhx-hmjr-r674": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (2 files)",
+      "severity": "cvss:3.1/av:n/ac:h/pr:n/ui:n/s:u/c:l/i:h/a:l",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 0,
+        "has_imports": true
+      }
+    },
+    "GHSA-vhxf-7vqr-mrjg": {
+      "classification": "potential",
+      "reason": "Patch available, limited usage (2 files)",
+      "severity": "cvss:3.1/av:l/ac:h/pr:n/ui:n/s:c/c:l/i:l/a:n",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "code_context": {
+        "files_affected": 2,
+        "security_files": 0,
+        "has_imports": true
+      }
+    }
+  },
+  "statistics": {
+    "confirmed": 3,
+    "potential": 7,
+    "irrelevant": 10
+  }
+}

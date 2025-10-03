@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "plan_timestamp": "2025-08-04T19:18:43.035995Z",
+    "scan_file": ".helix/scan/npm_scan_2025-08-04_191743.json",
+    "triage_file": ".helix/triage/triage_2025-08-04_191806.json",
+    "priority_filter": "all",
+    "package_filter": null,
+    "llm_analysis_enabled": true,
+    "code_context_enabled": true,
+    "analysis_type": "intelligent"
+  },
+  "immediate_actions": [],
+  "scheduled_updates": [
+    {
+      "cve": "GHSA-8cf7-32gw-wr33",
+      "severity": "cvss:3.1/av:n/ac:l/pr:l/ui:n/s:u/c:h/i:h/a:n",
+      "packages": [
+        "jsonwebtoken"
+      ],
+      "current_version": "8.5.1",
+      "fixed_version": "9.0.0",
+      "upgrade_command": "npm install jsonwebtoken@9.0.0",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 9,
+        "security_contexts": 4,
+        "usage_patterns": [
+          "production_usage",
+          "security_critical"
+        ],
+        "risk_indicators": [
+          "Used in security-sensitive contexts"
+        ]
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Given that the affected functions in the codebase rely on the `jsonwebtoken` package for token generation and verification, there is a reasonable chance that the upgrade will require code modifications to accommodate ch",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-hjrf-2m68-5959",
+      "severity": "cvss:3.1/av:n/ac:h/pr:l/ui:n/s:u/c:l/i:l/a:l",
+      "packages": [
+        "jsonwebtoken"
+      ],
+      "current_version": "8.5.1",
+      "fixed_version": "9.0.0",
+      "upgrade_command": "npm install jsonwebtoken@9.0.0",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 9,
+        "security_contexts": 4,
+        "usage_patterns": [
+          "production_usage",
+          "security_critical"
+        ],
+        "risk_indicators": [
+          "Used in security-sensitive contexts"
+        ]
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Specifically, the API for token generation and verification may have changed, which could lead to failures in the existing codebase. However, since the code is primarily focused on generating and verifying tokens, the l",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-qwph-4952-7xr6",
+      "severity": "cvss:3.1/av:n/ac:h/pr:l/ui:n/s:u/c:l/i:h/a:l",
+      "packages": [
+        "jsonwebtoken"
+      ],
+      "current_version": "8.5.1",
+      "fixed_version": "9.0.0",
+      "upgrade_command": "npm install jsonwebtoken@9.0.0",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 9,
+        "security_contexts": 4,
+        "usage_patterns": [
+          "production_usage",
+          "security_critical"
+        ],
+        "risk_indicators": [
+          "Used in security-sensitive contexts"
+        ]
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Specifically, the API for token generation and verification may have changed, which could lead to failures in the existing codebase. However, since the code is primarily focused on generating and verifying tokens, the l",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-p9wx-2529-fp83",
+      "severity": "cvss:4.0/av:n/ac:l/at:n/pr:n/ui:n/vc:n/vi:n/va:l/sc:n/si:n/sa:n",
+      "packages": [
+        "marked"
+      ],
+      "current_version": "0.3.9",
+      "fixed_version": "0.3.17",
+      "upgrade_command": "npm install marked@0.3.17",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 3,
+        "functions_affected": 9,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10+` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and alterations to renderer hooks. These changes will likely break existing code that relies on the previous API, as evidenced by the usage patterns in the provided code examples.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due to",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-5v2h-r2cx-5xgj",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:h",
+      "packages": [
+        "marked"
+      ],
+      "current_version": "0.3.9",
+      "fixed_version": "4.0.10",
+      "upgrade_command": "npm install marked@4.0.10",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 3,
+        "functions_affected": 9,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and modifications to renderer hooks. These changes will likely break existing code that relies on the previous API, as evidenced by the usage patterns in the provided code examples.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due t",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-rrrm-qjm4-v8hf",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:n/i:n/a:h",
+      "packages": [
+        "marked"
+      ],
+      "current_version": "0.3.9",
+      "fixed_version": "4.0.10",
+      "upgrade_command": "npm install marked@4.0.10",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 3,
+        "functions_affected": 9,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and modifications to renderer hooks. These changes will likely break existing code that relies on the previous API, especially since the affected functions are used in production.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due to ",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-p3vf-v8qc-cwcr",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:h/i:h/a:n",
+      "packages": [
+        "dompurify"
+      ],
+      "current_version": "2.2.6",
+      "fixed_version": "2.4.2",
+      "upgrade_command": "npm install dompurify@2.4.2",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 10,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Low likelihood  \nThe upgrade from `2.2.6` to `2.4.2` of `dompurify` is unlikely to introduce breaking changes. The versioning follows semantic versioning principles, where minor version upgrades (2.x.x) typically include backward-compatible features and bug fixes. The changelog for `dompurify` indicates that the changes in this range primarily focus on security enhancements and performance improvements, with no major API changes reported.\n\n**IMPACT ANALYSIS:**  \n",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-gx9m-whjm-85jf",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:c/c:l/i:h/a:h",
+      "packages": [
+        "dompurify"
+      ],
+      "current_version": "2.2.6",
+      "fixed_version": "3.1.3",
+      "upgrade_command": "npm install dompurify@3.1.3",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 10,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.1.3 introduces some changes that could potentially affect existing functionality. While the major version bump suggests possible breaking changes, the specific changes in the release notes indicate that most of the changes are backward-compatible. However, there are some API changes and deprecations that could affect how the library is used, particularly in the context of sanitization options and",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-mmhx-hmjr-r674",
+      "severity": "cvss:3.1/av:n/ac:h/pr:n/ui:n/s:u/c:l/i:h/a:l",
+      "packages": [
+        "dompurify"
+      ],
+      "current_version": "2.2.6",
+      "fixed_version": "3.1.3",
+      "upgrade_command": "npm install dompurify@3.1.3",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 10,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.1.3 introduces some changes in the API and behavior, particularly around the handling of certain inputs and outputs. While the core functionality remains intact, there are potential changes in how certain configurations are handled, which could lead to unexpected behavior in existing code. The documentation for version 3.0.0 and above indicates some deprecations and changes that may affect existi",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    },
+    {
+      "cve": "GHSA-vhxf-7vqr-mrjg",
+      "severity": "cvss:3.1/av:l/ac:h/pr:n/ui:n/s:c/c:l/i:l/a:n",
+      "packages": [
+        "dompurify"
+      ],
+      "current_version": "2.2.6",
+      "fixed_version": "3.2.4",
+      "upgrade_command": "npm install dompurify@3.2.4",
+      "estimated_risk": "medium",
+      "breaking_changes_likely": true,
+      "requires_code_changes": false,
+      "usage_analysis": {
+        "files_affected": 2,
+        "functions_affected": 10,
+        "security_contexts": 0,
+        "usage_patterns": [
+          "production_usage"
+        ],
+        "risk_indicators": []
+      },
+      "llm_insights": {
+        "confidence": "medium",
+        "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.2.4 introduces some changes that could potentially affect existing functionality. While the major version bump does not guarantee breaking changes, the changelog indicates some modifications in the API and behavior, particularly around configuration options and sanitization defaults. Given that the affected files utilize `DOMPurify` for sanitization, there is a moderate risk that existing usage p",
+        "specific_breaking_changes": [],
+        "testing_recommendations": [],
+        "estimated_effort": "high"
+      },
+      "upgrade_strategy": "staged_with_testing"
+    }
+  ],
+  "no_fix_available": [],
+  "alternative_solutions": [],
+  "llm_analyses": {
+    "GHSA-8cf7-32gw-wr33": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Given that the affected functions in the codebase rely on the `jsonwebtoken` package for token generation and verification, there is a reasonable chance that the upgrade will require code modifications to accommodate ch",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-8cf7-32gw-wr33"
+    },
+    "GHSA-hjrf-2m68-5959": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Specifically, the API for token generation and verification may have changed, which could lead to failures in the existing codebase. However, since the code is primarily focused on generating and verifying tokens, the l",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-hjrf-2m68-5959"
+    },
+    "GHSA-qwph-4952-7xr6": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `jsonwebtoken` version 8.5.1 to 9.0.0 introduces breaking changes, as indicated in the release notes. The major version bump suggests that there are significant changes that could affect existing functionality. Specifically, the API for token generation and verification may have changed, which could lead to failures in the existing codebase. However, since the code is primarily focused on generating and verifying tokens, the l",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-qwph-4952-7xr6"
+    },
+    "GHSA-p9wx-2529-fp83": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10+` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and alterations to renderer hooks. These changes will likely break existing code that relies on the previous API, as evidenced by the usage patterns in the provided code examples.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due to",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-p9wx-2529-fp83"
+    },
+    "GHSA-5v2h-r2cx-5xgj": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and modifications to renderer hooks. These changes will likely break existing code that relies on the previous API, as evidenced by the usage patterns in the provided code examples.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due t",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-5v2h-r2cx-5xgj"
+    },
+    "GHSA-rrrm-qjm4-v8hf": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** High likelihood  \nThe upgrade from `marked@0.3.9` to `marked@4.0.10` introduces significant API changes, including the renaming of the main function from `marked()` to `marked.parse()`, changes in option handling, and modifications to renderer hooks. These changes will likely break existing code that relies on the previous API, especially since the affected functions are used in production.\n\n**IMPACT ANALYSIS:**  \nThe impact of this upgrade is substantial due to ",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-rrrm-qjm4-v8hf"
+    },
+    "GHSA-p3vf-v8qc-cwcr": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Low likelihood  \nThe upgrade from `2.2.6` to `2.4.2` of `dompurify` is unlikely to introduce breaking changes. The versioning follows semantic versioning principles, where minor version upgrades (2.x.x) typically include backward-compatible features and bug fixes. The changelog for `dompurify` indicates that the changes in this range primarily focus on security enhancements and performance improvements, with no major API changes reported.\n\n**IMPACT ANALYSIS:**  \n",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-p3vf-v8qc-cwcr"
+    },
+    "GHSA-gx9m-whjm-85jf": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.1.3 introduces some changes that could potentially affect existing functionality. While the major version bump suggests possible breaking changes, the specific changes in the release notes indicate that most of the changes are backward-compatible. However, there are some API changes and deprecations that could affect how the library is used, particularly in the context of sanitization options and",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-gx9m-whjm-85jf"
+    },
+    "GHSA-mmhx-hmjr-r674": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.1.3 introduces some changes in the API and behavior, particularly around the handling of certain inputs and outputs. While the core functionality remains intact, there are potential changes in how certain configurations are handled, which could lead to unexpected behavior in existing code. The documentation for version 3.0.0 and above indicates some deprecations and changes that may affect existi",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-mmhx-hmjr-r674"
+    },
+    "GHSA-vhxf-7vqr-mrjg": {
+      "breaking_changes_likely": true,
+      "confidence": "medium",
+      "impact_assessment": "LLM provided non-JSON response",
+      "mitigation_strategy": "**BREAKING CHANGES ASSESSMENT:** Medium likelihood  \nThe upgrade from `dompurify` version 2.2.6 to 3.2.4 introduces some changes that could potentially affect existing functionality. While the major version bump does not guarantee breaking changes, the changelog indicates some modifications in the API and behavior, particularly around configuration options and sanitization defaults. Given that the affected files utilize `DOMPurify` for sanitization, there is a moderate risk that existing usage p",
+      "estimated_effort": "high",
+      "risk_level": "medium",
+      "llm_analysis": true,
+      "parse_error": true,
+      "cve_id": "GHSA-vhxf-7vqr-mrjg"
+    }
+  },
+  "statistics": {
+    "fixable": 10,
+    "no_fix": 0,
+    "total_actions": 10,
+    "high_risk_upgrades": 10,
+    "requires_code_changes": 0
+  }
+}

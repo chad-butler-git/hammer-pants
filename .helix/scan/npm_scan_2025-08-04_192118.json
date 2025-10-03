@@ -1,0 +1,4160 @@
+{
+  "metadata": {
+    "scan_timestamp": "2025-08-04T19:21:18.375195Z",
+    "lockfile_paths": [
+      "grocery-web/package-lock.json"
+    ],
+    "lockfiles_hash": "db1d7a78a65d1a8bef8fa31347abbff97f8df4faf1adfae231bb4d682420822a",
+    "tool_version": "helix-osv-scanner-1.0"
+  },
+  "packages": {
+    "@adobe/css-tools": {
+      "version": "4.4.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@alloc/quick-lru": {
+      "version": "5.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@ampproject/remapping": {
+      "version": "2.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/code-frame": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/compat-data": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/core": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/generator": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-compilation-targets": {
+      "version": "7.27.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-globals": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-module-imports": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-module-transforms": {
+      "version": "7.27.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-plugin-utils": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-string-parser": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-validator-identifier": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helper-validator-option": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/helpers": {
+      "version": "7.27.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/parser": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/plugin-transform-react-jsx-self": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/plugin-transform-react-jsx-source": {
+      "version": "7.27.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/runtime": {
+      "version": "7.27.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/template": {
+      "version": "7.27.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/traverse": {
+      "version": "7.28.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@babel/types": {
+      "version": "7.28.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/android-arm": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/android-arm64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/android-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/darwin-arm64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/darwin-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/freebsd-arm64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/freebsd-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-arm": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-arm64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-ia32": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-loong64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-mips64el": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-ppc64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-riscv64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-s390x": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/linux-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/netbsd-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/openbsd-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/sunos-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/win32-arm64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/win32-ia32": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@esbuild/win32-x64": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@eslint-community/eslint-utils": {
+      "version": "4.7.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@eslint-community/regexpp": {
+      "version": "4.12.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@eslint/eslintrc": {
+      "version": "2.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@eslint/js": {
+      "version": "8.57.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@humanwhocodes/config-array": {
+      "version": "0.13.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@humanwhocodes/module-importer": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@humanwhocodes/object-schema": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@isaacs/cliui": {
+      "version": "8.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ansi-regex": {
+      "version": "6.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-ansi": {
+      "version": "7.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/diff-sequences": {
+      "version": "30.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/expect-utils": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/get-type": {
+      "version": "30.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/pattern": {
+      "version": "30.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/schemas": {
+      "version": "29.6.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jest/types": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "chalk": {
+      "version": "4.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jridgewell/gen-mapping": {
+      "version": "0.3.12",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jridgewell/sourcemap-codec": {
+      "version": "1.5.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@jridgewell/trace-mapping": {
+      "version": "0.3.29",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@nodelib/fs.scandir": {
+      "version": "2.1.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@nodelib/fs.stat": {
+      "version": "2.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@nodelib/fs.walk": {
+      "version": "1.2.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@pkgjs/parseargs": {
+      "version": "0.11.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@remix-run/router": {
+      "version": "1.23.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@rolldown/pluginutils": {
+      "version": "1.0.0-beta.27",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@rtsao/scc": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@sinclair/typebox": {
+      "version": "0.27.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@testing-library/dom": {
+      "version": "9.3.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "aria-query": {
+      "version": "5.3.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@testing-library/jest-dom": {
+      "version": "5.17.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@testing-library/react": {
+      "version": "14.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@tootallnate/once": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/aria-query": {
+      "version": "5.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/babel__core": {
+      "version": "7.20.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/babel__generator": {
+      "version": "7.27.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/babel__template": {
+      "version": "7.4.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/babel__traverse": {
+      "version": "7.20.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/chai": {
+      "version": "4.3.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/chai-subset": {
+      "version": "1.3.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/istanbul-lib-coverage": {
+      "version": "2.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/istanbul-lib-report": {
+      "version": "3.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/istanbul-reports": {
+      "version": "3.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/jest": {
+      "version": "30.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ansi-styles": {
+      "version": "6.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pretty-format": {
+      "version": "27.5.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-is": {
+      "version": "17.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/json5": {
+      "version": "0.0.29",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/node": {
+      "version": "24.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/prop-types": {
+      "version": "15.7.15",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/react": {
+      "version": "18.3.23",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/react-dom": {
+      "version": "18.3.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/stack-utils": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/testing-library__jest-dom": {
+      "version": "5.14.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/yargs": {
+      "version": "17.0.33",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@types/yargs-parser": {
+      "version": "21.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@ungap/structured-clone": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitejs/plugin-react": {
+      "version": "4.7.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitest/expect": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitest/runner": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "p-limit": {
+      "version": "3.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "yocto-queue": {
+      "version": "0.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitest/snapshot": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitest/spy": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "@vitest/utils": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "abab": {
+      "version": "2.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "acorn": {
+      "version": "8.15.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "acorn-jsx": {
+      "version": "5.3.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "acorn-walk": {
+      "version": "8.3.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "agent-base": {
+      "version": "6.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ajv": {
+      "version": "6.12.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "any-promise": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "anymatch": {
+      "version": "3.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "picomatch": {
+      "version": "2.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "arg": {
+      "version": "5.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "argparse": {
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array-buffer-byte-length": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array-includes": {
+      "version": "3.1.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array.prototype.findlast": {
+      "version": "1.2.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array.prototype.findlastindex": {
+      "version": "1.2.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array.prototype.flat": {
+      "version": "1.3.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array.prototype.flatmap": {
+      "version": "1.3.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "array.prototype.tosorted": {
+      "version": "1.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "arraybuffer.prototype.slice": {
+      "version": "1.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "assertion-error": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ast-types-flow": {
+      "version": "0.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "async-function": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "asynckit": {
+      "version": "0.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "autoprefixer": {
+      "version": "10.4.21",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "available-typed-arrays": {
+      "version": "1.0.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "axe-core": {
+      "version": "4.10.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "axios": {
+      "version": "1.10.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "axobject-query": {
+      "version": "4.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "balanced-match": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "binary-extensions": {
+      "version": "2.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "brace-expansion": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "braces": {
+      "version": "3.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "browserslist": {
+      "version": "4.25.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "cac": {
+      "version": "6.7.14",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "call-bind": {
+      "version": "1.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "call-bind-apply-helpers": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "call-bound": {
+      "version": "1.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "callsites": {
+      "version": "3.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "camelcase-css": {
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "caniuse-lite": {
+      "version": "1.0.30001727",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "chai": {
+      "version": "4.5.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "check-error": {
+      "version": "1.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "chokidar": {
+      "version": "3.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "glob-parent": {
+      "version": "6.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ci-info": {
+      "version": "4.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "clsx": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "color-convert": {
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "color-name": {
+      "version": "1.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "combined-stream": {
+      "version": "1.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "commander": {
+      "version": "4.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "concat-map": {
+      "version": "0.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "confbox": {
+      "version": "0.1.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "confusing-browser-globals": {
+      "version": "1.0.11",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "convert-source-map": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "cross-spawn": {
+      "version": "7.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "css.escape": {
+      "version": "1.5.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "cssesc": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "cssstyle": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "csstype": {
+      "version": "3.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "damerau-levenshtein": {
+      "version": "1.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "data-urls": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "data-view-buffer": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "data-view-byte-length": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "data-view-byte-offset": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "debug": {
+      "version": "3.2.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "decimal.js": {
+      "version": "10.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "deep-eql": {
+      "version": "4.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "deep-equal": {
+      "version": "2.2.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "deep-is": {
+      "version": "0.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "define-data-property": {
+      "version": "1.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "define-properties": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "delayed-stream": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "didyoumean": {
+      "version": "1.2.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "diff-sequences": {
+      "version": "29.6.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "dlv": {
+      "version": "1.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "doctrine": {
+      "version": "2.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "dom-accessibility-api": {
+      "version": "0.5.16",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "domexception": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "dompurify": {
+      "version": "2.2.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 4
+    },
+    "dunder-proto": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eastasianwidth": {
+      "version": "0.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "electron-to-chromium": {
+      "version": "1.5.189",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "emoji-regex": {
+      "version": "8.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "entities": {
+      "version": "6.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-abstract": {
+      "version": "1.24.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-define-property": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-errors": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-get-iterator": {
+      "version": "1.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-iterator-helpers": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-object-atoms": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-set-tostringtag": {
+      "version": "2.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-shim-unscopables": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "es-to-primitive": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "esbuild": {
+      "version": "0.18.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 1
+    },
+    "escalade": {
+      "version": "3.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "escape-string-regexp": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint": {
+      "version": "8.57.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-config-airbnb": {
+      "version": "19.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-config-airbnb-base": {
+      "version": "15.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-config-prettier": {
+      "version": "8.10.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-import-resolver-node": {
+      "version": "0.3.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-module-utils": {
+      "version": "2.12.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-import": {
+      "version": "2.32.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-jsx-a11y": {
+      "version": "6.10.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-prettier": {
+      "version": "4.2.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-react": {
+      "version": "7.37.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-react-hooks": {
+      "version": "4.6.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-plugin-react-refresh": {
+      "version": "0.4.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "resolve": {
+      "version": "1.22.10",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-scope": {
+      "version": "7.2.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eslint-visitor-keys": {
+      "version": "3.4.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "espree": {
+      "version": "9.6.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "esquery": {
+      "version": "1.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "esrecurse": {
+      "version": "4.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "estraverse": {
+      "version": "5.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "esutils": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "eventsource-parser": {
+      "version": "1.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "expect": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fast-deep-equal": {
+      "version": "3.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fast-diff": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fast-glob": {
+      "version": "3.3.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fast-json-stable-stringify": {
+      "version": "2.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fast-levenshtein": {
+      "version": "2.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fastq": {
+      "version": "1.19.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "file-entry-cache": {
+      "version": "6.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fill-range": {
+      "version": "7.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "find-up": {
+      "version": "5.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "flat-cache": {
+      "version": "3.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "flatted": {
+      "version": "3.3.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "follow-redirects": {
+      "version": "1.15.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "for-each": {
+      "version": "0.3.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "foreground-child": {
+      "version": "3.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "form-data": {
+      "version": "4.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fraction.js": {
+      "version": "4.3.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fs.realpath": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "fsevents": {
+      "version": "2.3.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "function-bind": {
+      "version": "1.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "function.prototype.name": {
+      "version": "1.1.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "functions-have-names": {
+      "version": "1.2.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "gensync": {
+      "version": "1.0.0-beta.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "get-func-name": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "get-intrinsic": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "get-proto": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "get-symbol-description": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "glob": {
+      "version": "10.4.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "globals": {
+      "version": "13.24.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "globalthis": {
+      "version": "1.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "gopd": {
+      "version": "1.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "graceful-fs": {
+      "version": "4.2.11",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "graphemer": {
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-bigints": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-flag": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-property-descriptors": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-proto": {
+      "version": "1.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-symbols": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "has-tostringtag": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "hasown": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "html-encoding-sniffer": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "http-proxy-agent": {
+      "version": "5.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "https-proxy-agent": {
+      "version": "5.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "iconv-lite": {
+      "version": "0.6.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ignore": {
+      "version": "5.3.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "immer": {
+      "version": "10.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "import-fresh": {
+      "version": "3.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "imurmurhash": {
+      "version": "0.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "indent-string": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "inflight": {
+      "version": "1.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "inherits": {
+      "version": "2.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "internal-slot": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-arguments": {
+      "version": "1.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-array-buffer": {
+      "version": "3.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-async-function": {
+      "version": "2.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-bigint": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-binary-path": {
+      "version": "2.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-boolean-object": {
+      "version": "1.2.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-callable": {
+      "version": "1.2.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-core-module": {
+      "version": "2.16.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-data-view": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-date-object": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-extglob": {
+      "version": "2.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-finalizationregistry": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-fullwidth-code-point": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-generator-function": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-glob": {
+      "version": "4.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-map": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-negative-zero": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-number": {
+      "version": "7.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-number-object": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-path-inside": {
+      "version": "3.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-potential-custom-element-name": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-regex": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-set": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-shared-array-buffer": {
+      "version": "1.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-string": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-symbol": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-typed-array": {
+      "version": "1.1.15",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-weakmap": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-weakref": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "is-weakset": {
+      "version": "2.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "isarray": {
+      "version": "2.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "isexe": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "iterator.prototype": {
+      "version": "1.1.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jackspeak": {
+      "version": "3.4.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-diff": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-matcher-utils": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-message-util": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-mock": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-regex-util": {
+      "version": "30.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jest-util": {
+      "version": "30.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jiti": {
+      "version": "1.21.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "js-tokens": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "js-yaml": {
+      "version": "4.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jsdom": {
+      "version": "22.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jsesc": {
+      "version": "3.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "json-buffer": {
+      "version": "3.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "json-schema-traverse": {
+      "version": "0.4.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "json-stable-stringify-without-jsonify": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "json5": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "jsx-ast-utils": {
+      "version": "3.3.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "keyv": {
+      "version": "4.5.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "language-subtag-registry": {
+      "version": "0.3.23",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "language-tags": {
+      "version": "1.0.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "levn": {
+      "version": "0.4.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lilconfig": {
+      "version": "3.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lines-and-columns": {
+      "version": "1.2.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "local-pkg": {
+      "version": "0.4.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "locate-path": {
+      "version": "6.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lodash": {
+      "version": "4.17.21",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lodash.merge": {
+      "version": "4.6.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "loose-envify": {
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "loupe": {
+      "version": "2.3.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lru-cache": {
+      "version": "10.4.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "lz-string": {
+      "version": "1.5.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "magic-string": {
+      "version": "0.30.17",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "math-intrinsics": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "merge2": {
+      "version": "1.4.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "micromatch": {
+      "version": "4.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "mime-db": {
+      "version": "1.52.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "mime-types": {
+      "version": "2.1.35",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "min-indent": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "minimatch": {
+      "version": "9.0.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "minimist": {
+      "version": "1.2.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "minipass": {
+      "version": "7.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "mlly": {
+      "version": "1.7.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pathe": {
+      "version": "2.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ms": {
+      "version": "2.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "mz": {
+      "version": "2.7.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "nanoid": {
+      "version": "3.3.11",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "natural-compare": {
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "node-releases": {
+      "version": "2.0.19",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "normalize-path": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "normalize-range": {
+      "version": "0.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "nwsapi": {
+      "version": "2.2.20",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object-assign": {
+      "version": "4.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object-hash": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object-inspect": {
+      "version": "1.13.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object-is": {
+      "version": "1.1.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object-keys": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object.assign": {
+      "version": "4.1.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object.entries": {
+      "version": "1.1.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object.fromentries": {
+      "version": "2.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object.groupby": {
+      "version": "1.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "object.values": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "once": {
+      "version": "1.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "optionator": {
+      "version": "0.9.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "own-keys": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "p-locate": {
+      "version": "5.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "package-json-from-dist": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "parent-module": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "parse5": {
+      "version": "7.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "path-exists": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "path-is-absolute": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "path-key": {
+      "version": "3.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "path-parse": {
+      "version": "1.0.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "path-scurry": {
+      "version": "1.11.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pathval": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "picocolors": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pify": {
+      "version": "2.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pirates": {
+      "version": "4.0.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "pkg-types": {
+      "version": "1.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "possible-typed-array-names": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss": {
+      "version": "8.5.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-import": {
+      "version": "15.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-js": {
+      "version": "4.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-load-config": {
+      "version": "4.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-nested": {
+      "version": "6.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-selector-parser": {
+      "version": "6.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "postcss-value-parser": {
+      "version": "4.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "prelude-ls": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "prettier": {
+      "version": "2.8.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "prettier-linter-helpers": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "prop-types": {
+      "version": "15.8.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "proxy-from-env": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "psl": {
+      "version": "1.15.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "punycode": {
+      "version": "2.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "querystringify": {
+      "version": "2.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "queue-microtask": {
+      "version": "1.2.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react": {
+      "version": "18.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-dom": {
+      "version": "18.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-refresh": {
+      "version": "0.17.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-router": {
+      "version": "6.30.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-router-dom": {
+      "version": "6.30.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "react-toastify": {
+      "version": "9.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "read-cache": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "readdirp": {
+      "version": "3.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "redent": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "reflect.getprototypeof": {
+      "version": "1.0.10",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "regexp.prototype.flags": {
+      "version": "1.5.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "requires-port": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "resolve-from": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "reusify": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "rimraf": {
+      "version": "3.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "rollup": {
+      "version": "3.29.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "rrweb-cssom": {
+      "version": "0.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "run-parallel": {
+      "version": "1.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "safe-array-concat": {
+      "version": "1.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "safe-push-apply": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "safe-regex-test": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "safer-buffer": {
+      "version": "2.1.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "saxes": {
+      "version": "6.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "scheduler": {
+      "version": "0.23.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "semver": {
+      "version": "6.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "set-function-length": {
+      "version": "1.2.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "set-function-name": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "set-proto": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "shebang-command": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "shebang-regex": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "side-channel": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "side-channel-list": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "side-channel-map": {
+      "version": "1.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "side-channel-weakmap": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "siginfo": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "signal-exit": {
+      "version": "4.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "slash": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "source-map-js": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "stack-utils": {
+      "version": "2.0.6",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "stackback": {
+      "version": "0.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "std-env": {
+      "version": "3.9.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "stop-iteration-iterator": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string-width": {
+      "version": "4.2.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string-width-cjs": {
+      "version": "4.2.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.includes": {
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.matchall": {
+      "version": "4.0.12",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.repeat": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.trim": {
+      "version": "1.2.10",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.trimend": {
+      "version": "1.0.9",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "string.prototype.trimstart": {
+      "version": "1.0.8",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-ansi-cjs": {
+      "version": "6.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-bom": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-indent": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-json-comments": {
+      "version": "3.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "strip-literal": {
+      "version": "1.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "sucrase": {
+      "version": "3.35.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "supports-color": {
+      "version": "7.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "supports-preserve-symlinks-flag": {
+      "version": "1.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "symbol-tree": {
+      "version": "3.2.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tailwindcss": {
+      "version": "3.4.17",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "text-table": {
+      "version": "0.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "thenify": {
+      "version": "3.3.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "thenify-all": {
+      "version": "1.6.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tinybench": {
+      "version": "2.9.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tinypool": {
+      "version": "0.5.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tinyspy": {
+      "version": "2.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "to-regex-range": {
+      "version": "5.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tough-cookie": {
+      "version": "4.1.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tr46": {
+      "version": "4.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ts-interface-checker": {
+      "version": "0.1.13",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "tsconfig-paths": {
+      "version": "3.15.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "type-check": {
+      "version": "0.4.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "type-detect": {
+      "version": "4.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "type-fest": {
+      "version": "0.20.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "typed-array-buffer": {
+      "version": "1.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "typed-array-byte-length": {
+      "version": "1.0.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "typed-array-byte-offset": {
+      "version": "1.0.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "typed-array-length": {
+      "version": "1.0.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ufo": {
+      "version": "1.6.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "unbox-primitive": {
+      "version": "1.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "undici-types": {
+      "version": "7.8.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "universalify": {
+      "version": "0.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "update-browserslist-db": {
+      "version": "1.1.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "uri-js": {
+      "version": "4.4.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "url-parse": {
+      "version": "1.5.10",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "use-sync-external-store": {
+      "version": "1.5.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "util-deprecate": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "vite": {
+      "version": "4.5.14",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "vite-node": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "vitest": {
+      "version": "0.32.4",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "w3c-xmlserializer": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "webidl-conversions": {
+      "version": "7.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "whatwg-encoding": {
+      "version": "2.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "whatwg-mimetype": {
+      "version": "3.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "whatwg-url": {
+      "version": "12.0.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "which": {
+      "version": "2.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "which-boxed-primitive": {
+      "version": "1.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "which-builtin-type": {
+      "version": "1.2.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "which-collection": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "which-typed-array": {
+      "version": "1.1.19",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "why-is-node-running": {
+      "version": "2.3.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "word-wrap": {
+      "version": "1.2.5",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "wrap-ansi": {
+      "version": "8.1.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "wrap-ansi-cjs": {
+      "version": "7.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "wrappy": {
+      "version": "1.0.2",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "ws": {
+      "version": "8.18.3",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "xml-name-validator": {
+      "version": "4.0.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "xmlchars": {
+      "version": "2.2.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "yallist": {
+      "version": "3.1.1",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "yaml": {
+      "version": "2.8.0",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    },
+    "zustand": {
+      "version": "4.5.7",
+      "ecosystem": "npm",
+      "lockfile": "grocery-web/package-lock.json",
+      "scanned": true,
+      "vulnerabilities_found": 0
+    }
+  },
+  "vulnerabilities": {
+    "GHSA-p3vf-v8qc-cwcr": {
+      "summary": "DOMPurify vulnerable to tampering by prototype polution",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:u/c:h/i:h/a:n",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "remediation": {
+        "patched": true,
+        "fixed_in": "2.4.2",
+        "upgrade_command": "npm install dompurify@2.4.2",
+        "breaking_changes": false
+      },
+      "raw_data": {
+        "id": "GHSA-p3vf-v8qc-cwcr",
+        "summary": "DOMPurify vulnerable to tampering by prototype polution",
+        "details": "dompurify was vulnerable to prototype pollution\n\nFixed by https://github.com/cure53/DOMPurify/commit/d1dd0374caef2b4c56c3bd09fe1988c3479166dc",
+        "aliases": [
+          "CVE-2024-48910"
+        ],
+        "modified": "2024-10-31T17:03:38Z",
+        "published": "2024-10-31T14:23:34Z",
+        "database_specific": {
+          "github_reviewed": true,
+          "nvd_published_at": "2024-10-31T15:15:15Z",
+          "severity": "CRITICAL",
+          "github_reviewed_at": "2024-10-31T14:23:34Z",
+          "cwe_ids": [
+            "CWE-1321"
+          ]
+        },
+        "references": [
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-p3vf-v8qc-cwcr"
+          },
+          {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-48910"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/d1dd0374caef2b4c56c3bd09fe1988c3479166dc"
+          },
+          {
+            "type": "PACKAGE",
+            "url": "https://github.com/cure53/DOMPurify"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0"
+                  },
+                  {
+                    "fixed": "2.4.2"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-p3vf-v8qc-cwcr/GHSA-p3vf-v8qc-cwcr.json"
+            }
+          }
+        ],
+        "schema_version": "1.6.0",
+        "severity": [
+          {
+            "type": "CVSS_V3",
+            "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+          },
+          {
+            "type": "CVSS_V4",
+            "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+          }
+        ]
+      }
+    },
+    "GHSA-gx9m-whjm-85jf": {
+      "summary": "DOMpurify has a nesting-based mXSS",
+      "severity": "cvss:3.1/av:n/ac:l/pr:n/ui:n/s:c/c:l/i:h/a:h",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "remediation": {
+        "patched": true,
+        "fixed_in": "3.1.3",
+        "upgrade_command": "npm install dompurify@3.1.3",
+        "breaking_changes": false
+      },
+      "raw_data": {
+        "id": "GHSA-gx9m-whjm-85jf",
+        "summary": "DOMpurify has a nesting-based mXSS",
+        "details": "DOMpurify was vulnerable to nesting-based mXSS \n\nfixed by [0ef5e537](https://github.com/cure53/DOMPurify/tree/0ef5e537a514f904b6aa1d7ad9e749e365d7185f) (2.x) and\n[merge 943](https://github.com/cure53/DOMPurify/pull/943)\n\nBackporter should be aware of GHSA-mmhx-hmjr-r674 (CVE-2024-45801) when cherry-picking\n\nPOC is avaible under [test](https://github.com/cure53/DOMPurify/blob/0ef5e537a514f904b6aa1d7ad9e749e365d7185f/test/test-suite.js#L2098)",
+        "aliases": [
+          "CVE-2024-47875"
+        ],
+        "modified": "2024-10-11T17:42:13.963914Z",
+        "published": "2024-10-11T17:27:29Z",
+        "related": [
+          "CGA-c8mw-2r5f-43qx"
+        ],
+        "database_specific": {
+          "github_reviewed": true,
+          "nvd_published_at": "2024-10-11T15:15:05Z",
+          "severity": "HIGH",
+          "github_reviewed_at": "2024-10-11T17:27:29Z",
+          "cwe_ids": [
+            "CWE-79"
+          ]
+        },
+        "references": [
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-gx9m-whjm-85jf"
+          },
+          {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47875"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/0ef5e537a514f904b6aa1d7ad9e749e365d7185f"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/6ea80cd8b47640c20f2f230c7920b1f4ce4fdf7a"
+          },
+          {
+            "type": "PACKAGE",
+            "url": "https://github.com/cure53/DOMPurify"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/blob/0ef5e537a514f904b6aa1d7ad9e749e365d7185f/test/test-suite.js#L2098"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0"
+                  },
+                  {
+                    "fixed": "2.5.0"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-gx9m-whjm-85jf/GHSA-gx9m-whjm-85jf.json"
+            }
+          },
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "3.0.0"
+                  },
+                  {
+                    "fixed": "3.1.3"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-gx9m-whjm-85jf/GHSA-gx9m-whjm-85jf.json"
+            }
+          }
+        ],
+        "schema_version": "1.6.0",
+        "severity": [
+          {
+            "type": "CVSS_V3",
+            "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:H"
+          },
+          {
+            "type": "CVSS_V4",
+            "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:L/SI:H/SA:H"
+          }
+        ]
+      }
+    },
+    "GHSA-mmhx-hmjr-r674": {
+      "summary": "DOMPurify allows tampering by prototype pollution",
+      "severity": "cvss:3.1/av:n/ac:h/pr:n/ui:n/s:u/c:l/i:h/a:l",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "remediation": {
+        "patched": true,
+        "fixed_in": "3.1.3",
+        "upgrade_command": "npm install dompurify@3.1.3",
+        "breaking_changes": false
+      },
+      "raw_data": {
+        "id": "GHSA-mmhx-hmjr-r674",
+        "summary": "DOMPurify allows tampering by prototype pollution",
+        "details": "It has been discovered that malicious HTML using special nesting techniques can bypass the depth checking added to DOMPurify in recent releases. It was also possible to use Prototype Pollution to weaken the depth check.\n\nThis renders dompurify unable to avoid XSS attack.\n\nFixed by https://github.com/cure53/DOMPurify/commit/1e520262bf4c66b5efda49e2316d6d1246ca7b21 (3.x branch) and https://github.com/cure53/DOMPurify/commit/26e1d69ca7f769f5c558619d644d90dd8bf26ebc (2.x branch).",
+        "aliases": [
+          "CVE-2024-45801"
+        ],
+        "modified": "2024-09-16T22:37:33Z",
+        "published": "2024-09-16T20:34:26Z",
+        "related": [
+          "CGA-5j49-55mq-6vwc",
+          "CGA-7x65-24gc-h66m"
+        ],
+        "database_specific": {
+          "github_reviewed": true,
+          "nvd_published_at": "2024-09-16T19:16:11Z",
+          "severity": "HIGH",
+          "github_reviewed_at": "2024-09-16T20:34:26Z",
+          "cwe_ids": [
+            "CWE-1321",
+            "CWE-1333"
+          ]
+        },
+        "references": [
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-mmhx-hmjr-r674"
+          },
+          {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45801"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/1e520262bf4c66b5efda49e2316d6d1246ca7b21"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/26e1d69ca7f769f5c558619d644d90dd8bf26ebc"
+          },
+          {
+            "type": "PACKAGE",
+            "url": "https://github.com/cure53/DOMPurify"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0"
+                  },
+                  {
+                    "fixed": "2.5.4"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-mmhx-hmjr-r674/GHSA-mmhx-hmjr-r674.json"
+            }
+          },
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "3.0.0"
+                  },
+                  {
+                    "fixed": "3.1.3"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-mmhx-hmjr-r674/GHSA-mmhx-hmjr-r674.json"
+            }
+          }
+        ],
+        "schema_version": "1.6.0",
+        "severity": [
+          {
+            "type": "CVSS_V3",
+            "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:L"
+          },
+          {
+            "type": "CVSS_V4",
+            "score": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:N/SA:N"
+          }
+        ]
+      }
+    },
+    "GHSA-vhxf-7vqr-mrjg": {
+      "summary": "DOMPurify allows Cross-site Scripting (XSS)",
+      "severity": "cvss:3.1/av:l/ac:h/pr:n/ui:n/s:c/c:l/i:l/a:n",
+      "affected_packages": [
+        "dompurify"
+      ],
+      "remediation": {
+        "patched": true,
+        "fixed_in": "3.2.4",
+        "upgrade_command": "npm install dompurify@3.2.4",
+        "breaking_changes": false
+      },
+      "raw_data": {
+        "id": "GHSA-vhxf-7vqr-mrjg",
+        "summary": "DOMPurify allows Cross-site Scripting (XSS)",
+        "details": "DOMPurify before 3.2.4 has an incorrect template literal regular expression when SAFE_FOR_TEMPLATES is set to true, sometimes leading to mutation cross-site scripting (mXSS).",
+        "aliases": [
+          "CVE-2025-26791"
+        ],
+        "modified": "2025-06-30T14:24:13Z",
+        "published": "2025-02-14T09:31:22Z",
+        "related": [
+          "CGA-3gr4-2xr6-89vr",
+          "CGA-62f7-r46p-jjcw"
+        ],
+        "database_specific": {
+          "github_reviewed": true,
+          "nvd_published_at": "2025-02-14T09:15:08Z",
+          "severity": "MODERATE",
+          "github_reviewed_at": "2025-02-14T18:05:08Z",
+          "cwe_ids": [
+            "CWE-79"
+          ]
+        },
+        "references": [
+          {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-26791"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/commit/d18ffcb554e0001748865da03ac75dd7829f0f02"
+          },
+          {
+            "type": "WEB",
+            "url": "https://ensy.zip/posts/dompurify-323-bypass"
+          },
+          {
+            "type": "PACKAGE",
+            "url": "https://github.com/cure53/DOMPurify"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/cure53/DOMPurify/releases/tag/3.2.4"
+          },
+          {
+            "type": "WEB",
+            "url": "https://nsysean.github.io/posts/dompurify-323-bypass"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "dompurify",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/dompurify"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0"
+                  },
+                  {
+                    "fixed": "3.2.4"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/02/GHSA-vhxf-7vqr-mrjg/GHSA-vhxf-7vqr-mrjg.json"
+            }
+          }
+        ],
+        "schema_version": "1.6.0",
+        "severity": [
+          {
+            "type": "CVSS_V3",
+            "score": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:N"
+          }
+        ]
+      }
+    },
+    "GHSA-67mh-4wv8-2f99": {
+      "summary": "esbuild enables any website to send any requests to the development server and read the response",
+      "severity": "cvss:3.1/av:n/ac:h/pr:n/ui:r/s:u/c:h/i:n/a:n",
+      "affected_packages": [
+        "esbuild"
+      ],
+      "remediation": {
+        "patched": true,
+        "fixed_in": "0.25.0",
+        "upgrade_command": "npm install esbuild@0.25.0",
+        "breaking_changes": false
+      },
+      "raw_data": {
+        "id": "GHSA-67mh-4wv8-2f99",
+        "summary": "esbuild enables any website to send any requests to the development server and read the response",
+        "details": "### Summary\n\nesbuild allows any websites to send any request to the development server and read the response due to default CORS settings.\n\n### Details\n\nesbuild sets `Access-Control-Allow-Origin: *` header to all requests, including the SSE connection, which allows any websites to send any request to the development server and read the response.\n\nhttps://github.com/evanw/esbuild/blob/df815ac27b84f8b34374c9182a93c94718f8a630/pkg/api/serve_other.go#L121\nhttps://github.com/evanw/esbuild/blob/df815ac27b84f8b34374c9182a93c94718f8a630/pkg/api/serve_other.go#L363\n\n**Attack scenario**:\n\n1. The attacker serves a malicious web page (`http://malicious.example.com`).\n1. The user accesses the malicious web page.\n1. The attacker sends a `fetch('http://127.0.0.1:8000/main.js')` request by JS in that malicious web page. This request is normally blocked by same-origin policy, but that's not the case for the reasons above.\n1. The attacker gets the content of `http://127.0.0.1:8000/main.js`.\n\nIn this scenario, I assumed that the attacker knows the URL of the bundle output file name. But the attacker can also get that information by\n\n- Fetching `/index.html`: normally you have a script tag here\n- Fetching `/assets`: it's common to have a `assets` directory when you have JS files and CSS files in a different directory and the directory listing feature tells the attacker the list of files\n- Connecting `/esbuild` SSE endpoint: the SSE endpoint sends the URL path of the changed files when the file is changed (`new EventSource('/esbuild').addEventListener('change', e => console.log(e.type, e.data))`)\n- Fetching URLs in the known file: once the attacker knows one file, the attacker can know the URLs imported from that file\n\nThe scenario above fetches the compiled content, but if the victim has the source map option enabled, the attacker can also get the non-compiled content by fetching the source map file.\n\n### PoC\n\n1. Download [reproduction.zip](https://github.com/user-attachments/files/18561484/reproduction.zip)\n2. Extract it and move to that directory\n1. Run `npm i`\n1. Run `npm run watch`\n1. Run `fetch('http://127.0.0.1:8000/app.js').then(r => r.text()).then(content => console.log(content))` in a different website's dev tools.\n\n![image](https://github.com/user-attachments/assets/08fc2e4d-e1ec-44ca-b0ea-78a73c3c40e9)\n\n### Impact\n\nUsers using the serve feature may get the source code stolen by malicious websites.",
+        "modified": "2025-02-10T17:48:08Z",
+        "published": "2025-02-10T17:48:07Z",
+        "related": [
+          "CGA-4v28-58cf-ggx7",
+          "CGA-5qqq-3383-mhjr",
+          "CGA-75rh-2q2q-wm52",
+          "CGA-m983-9xr3-349j",
+          "CGA-mhg6-chj9-5v88",
+          "CGA-rjff-7jch-vw6j",
+          "CGA-w25f-r54p-vh94"
+        ],
+        "database_specific": {
+          "github_reviewed_at": "2025-02-10T17:48:07Z",
+          "cwe_ids": [
+            "CWE-346"
+          ],
+          "severity": "MODERATE",
+          "github_reviewed": true,
+          "nvd_published_at": null
+        },
+        "references": [
+          {
+            "type": "WEB",
+            "url": "https://github.com/evanw/esbuild/security/advisories/GHSA-67mh-4wv8-2f99"
+          },
+          {
+            "type": "WEB",
+            "url": "https://github.com/evanw/esbuild/commit/de85afd65edec9ebc44a11e245fd9e9a2e99760d"
+          },
+          {
+            "type": "PACKAGE",
+            "url": "https://github.com/evanw/esbuild"
+          }
+        ],
+        "affected": [
+          {
+            "package": {
+              "name": "esbuild",
+              "ecosystem": "npm",
+              "purl": "pkg:npm/esbuild"
+            },
+            "ranges": [
+              {
+                "type": "SEMVER",
+                "events": [
+                  {
+                    "introduced": "0"
+                  },
+                  {
+                    "fixed": "0.25.0"
+                  }
+                ]
+              }
+            ],
+            "database_specific": {
+              "last_known_affected_version_range": "<= 0.24.2",
+              "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/02/GHSA-67mh-4wv8-2f99/GHSA-67mh-4wv8-2f99.json"
+            }
+          }
+        ],
+        "schema_version": "1.6.0",
+        "severity": [
+          {
+            "type": "CVSS_V3",
+            "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+          }
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "total_packages": 519,
+    "total_vulnerabilities": 5,
+    "vulnerabilities_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 0
+    }
+  }
+}
