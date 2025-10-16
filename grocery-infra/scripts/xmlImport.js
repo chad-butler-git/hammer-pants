@@ -29,6 +29,12 @@ if (baseUrlArgIndex !== -1 && args.length > baseUrlArgIndex + 1) {
   baseUrl = args[baseUrlArgIndex + 1];
 }
 
+// Validate base URL scheme (defense-in-depth for axios DoS fix)
+if (!/^https?:\/\//i.test(baseUrl)) {
+  console.error('Error: Unsupported URL scheme in --base-url. Only http:// or https:// are allowed.');
+  process.exit(1);
+}
+
 // Check for --file argument
 const fileArgIndex = args.findIndex(arg => arg === '--file');
 if (fileArgIndex !== -1 && args.length > fileArgIndex + 1) {

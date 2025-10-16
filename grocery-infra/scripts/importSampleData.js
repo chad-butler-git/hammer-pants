@@ -20,6 +20,12 @@ if (baseUrlArgIndex !== -1 && args.length > baseUrlArgIndex + 1) {
   baseUrl = args[baseUrlArgIndex + 1];
 }
 
+// Validate base URL scheme (defense-in-depth for axios DoS fix)
+if (!/^https?:\/\//i.test(baseUrl)) {
+  console.error('Error: Unsupported URL scheme in --base-url. Only http:// or https:// are allowed.');
+  process.exit(1);
+}
+
 // Sample data directory
 const SAMPLE_DATA_DIR = path.join(__dirname, '..', 'sample-data');
 
