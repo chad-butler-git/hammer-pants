@@ -43,14 +43,12 @@ function MarkdownEditor({ value, onChange, placeholder }) {
         }
       } catch (error) {
         console.error('Error rendering markdown:', error);
-        // Fallback to simple rendering
-        setPreview(`<p>${markdown}</p>`);
+        // Fallback: keep previous preview but log error
       }
     };
 
-    // For demo purposes, we'll just set a simple HTML preview
-    // This simulates what would happen with the API call
-    setPreview(`<p>${markdown}</p>`);
+    // For demo purposes, assume API returns sanitized HTML
+    setPreview(DOMPurify.sanitize(`<p>${markdown}</p>`));
   }, [markdown]);
 
   const handleChange = (e) => {
