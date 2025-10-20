@@ -9,10 +9,10 @@ Total Packages with Vulnerabilities: 10
 
 | CVE/GHSA ID | Package | Lockfile | Dependency Chain | Upgradeable Package | Scanned CVSS | Scanned Severity | Triage Status | Codebase Severity | Upgrade Impact | Remediation Status |
 |-------------|---------|----------|------------------|---------------------|--------------|------------------|---------------|-------------------|----------------|-------------------|
-| GHSA-p3vf-v8qc-cwcr | dompurify | grocery-web | Direct | dompurify | 9.1 | Critical | completed | Low | breaking_changes | pending |
-| GHSA-gx9m-whjm-85jf | dompurify | grocery-web | Direct | dompurify | 10.0 | High | completed | Low | breaking_changes | pending |
-| GHSA-mmhx-hmjr-r674 | dompurify | grocery-web | Direct | dompurify | 7.0 | High | completed | Low | breaking_changes | pending |
-| GHSA-vhxf-7vqr-mrjg | dompurify | grocery-web | Direct | dompurify | 4.5 | Medium | completed | Low | breaking_changes | pending |
+| GHSA-p3vf-v8qc-cwcr | dompurify | grocery-web | Direct | dompurify | 9.1 | Critical | completed | Low | breaking_changes | completed |
+| GHSA-gx9m-whjm-85jf | dompurify | grocery-web | Direct | dompurify | 10.0 | High | completed | Low | breaking_changes | completed |
+| GHSA-mmhx-hmjr-r674 | dompurify | grocery-web | Direct | dompurify | 7.0 | High | completed | Low | breaking_changes | completed |
+| GHSA-vhxf-7vqr-mrjg | dompurify | grocery-web | Direct | dompurify | 4.5 | Medium | completed | Low | breaking_changes | completed |
 | GHSA-g4jq-h2w9-997c | vite | grocery-web | Direct | vite | 2.0 | Low | completed | Low | breaking_changes | pending |
 | GHSA-jqfw-vq24-v9c3 | vite | grocery-web | Direct | vite | 2.0 | Low | completed | Low | breaking_changes | pending |
 | GHSA-g4jq-h2w9-997c | vite | grocery-shared/grocery-web | vitest → vite | vitest | 2.0 | Low | completed | Low | safe_upgrade | pending |
