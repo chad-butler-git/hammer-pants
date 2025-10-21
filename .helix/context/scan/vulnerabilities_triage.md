@@ -24,9 +24,9 @@ Total Packages with Vulnerabilities: 10
 | GHSA-r628-mhmh-qjhw | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
 | GHSA-f5x3-32g6-xq36 | tar | grocery-infra | fsevents → tar | fsevents | 6.5 | Medium | completed | Low | safe_upgrade | pending |
 | GHSA-qqgx-2p2h-9c37 | ini | grocery-infra | fsevents → ini | fsevents | 7.3 | High | completed | Low | safe_upgrade | pending |
-| GHSA-4hjh-wcwx-xvwj | axios | grocery-web | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | pending |
-| GHSA-4hjh-wcwx-xvwj | axios | grocery-shared/grocery-web | Direct | axios | 7.5 | High | completed | None | safe_upgrade | pending |
-| GHSA-4hjh-wcwx-xvwj | axios | grocery-infra | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | pending |
+| GHSA-4hjh-wcwx-xvwj | axios | grocery-web | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | completed |
+| GHSA-4hjh-wcwx-xvwj | axios | grocery-shared/grocery-web | Direct | axios | 7.5 | High | completed | None | safe_upgrade | completed |
+| GHSA-4hjh-wcwx-xvwj | axios | grocery-infra | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | completed |
 | GHSA-5v2h-r2cx-5xgj | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | pending |
 | GHSA-rrrm-qjm4-v8hf | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | pending |
 | GHSA-p9wx-2529-fp83 | marked | grocery-shared | Direct | marked | N/A | Medium | completed | High | breaking_changes | pending |
