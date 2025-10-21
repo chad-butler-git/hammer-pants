@@ -12,7 +12,7 @@
  * - ESM build becomes the default
  */
 
-const marked = require('marked');
+const { marked } = require('marked');
 
 /**
  * Converts markdown text to HTML
@@ -25,7 +25,7 @@ function renderMarkdown(markdownText) {
   }
   
   // Using the vulnerable marked@0.3.9 API
-  return marked(markdownText);
+  return marked.parse(markdownText);
 }
 
 /**
