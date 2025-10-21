@@ -1,12 +1,11 @@
 /**
  * Tests for markdown rendering functionality
  * 
- * These tests verify the markdown rendering works with marked@0.3.9
- * and will fail when upgrading to marked@4.0.10+ without code changes.
+ * These tests verify the markdown rendering works with marked@4.0.10+.
  */
 
 const { renderMarkdown, sanitizeAndRenderMarkdown } = require('../src/markdown');
-const marked = require('marked');
+const { marked } = require('marked');
 
 describe('Markdown Rendering Functionality', () => {
   test('renderMarkdown should convert markdown to HTML', () => {
@@ -14,7 +13,7 @@ describe('Markdown Rendering Functionality', () => {
     const html = renderMarkdown(markdown);
     
     // Should contain HTML elements
-    expect(html).toContain('<h1>');
+    expect(html).toMatch(/<h1\b[^>]*>/);
     expect(html).toContain('<strong>');
     expect(html).toContain('<em>');
     
@@ -34,10 +33,14 @@ describe('Markdown Rendering Functionality', () => {
     const markdown = 'This has <script>alert("XSS")</script> and <img src="x" onerror="alert(1)">';
     const html = sanitizeAndRenderMarkdown(markdown);
     
-    // Should not contain dangerous tags
+    // Should not contain dangerous tags as executable HTML
     expect(html).not.toContain('<script>');
-    expect(html).not.toContain('onerror=');
+    expect(html).not.toContain('<img ');
     
+    // Escaped representations should be present
+    expect(html).toContain('&lt;script&gt;');
+    expect(html).toContain('&lt;img');
+
     // Should contain the safe text
     expect(html).toContain('This has');
   });
@@ -50,8 +53,8 @@ describe('Markdown Rendering Functionality', () => {
     const markdown = '# Test';
     
     // In v0.3.9, this works
-    const html = marked(markdown);
-    expect(html).toContain('<h1>');
+    const html = marked.parse(markdown);
+    expect(html).toMatch(/<h1\b[^>]*>/);
     
     // In v4.0.10+, this will fail because marked is no longer a function
     // The fix would be:
@@ -67,8 +70,8 @@ describe('Markdown Rendering Functionality', () => {
     
     // In v0.3.9, this works
     const options = { sanitize: true };
-    const html = marked(markdown, options);
-    expect(html).toContain('<h1>');
+    const html = marked.parse(markdown);
+    expect(html).toMatch(/<h1\b[^>]*>/);
     
     // In v4.0.10+, this will fail because sanitize option is removed
     // The fix would be:
