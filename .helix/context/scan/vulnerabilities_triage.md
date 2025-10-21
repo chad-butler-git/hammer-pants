@@ -27,9 +27,9 @@ Total Packages with Vulnerabilities: 10
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-web | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | completed |
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-shared/grocery-web | Direct | axios | 7.5 | High | completed | None | safe_upgrade | completed |
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-infra | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | completed |
-| GHSA-5v2h-r2cx-5xgj | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | pending |
-| GHSA-rrrm-qjm4-v8hf | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | pending |
-| GHSA-p9wx-2529-fp83 | marked | grocery-shared | Direct | marked | N/A | Medium | completed | High | breaking_changes | pending |
+| GHSA-5v2h-r2cx-5xgj | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | completed |
+| GHSA-rrrm-qjm4-v8hf | marked | grocery-shared | Direct | marked | 7.5 | High | completed | High | breaking_changes | completed |
+| GHSA-p9wx-2529-fp83 | marked | grocery-shared | Direct | marked | N/A | Medium | completed | High | breaking_changes | completed |
 | GHSA-9965-vmph-33xx | validator | grocery-shared | Direct | validator | 6.1 | Medium | completed | Low | no_fix | pending |
 | GHSA-qgmg-gppg-76g5 | validator | grocery-shared | Direct | validator | 5.3 | Medium | completed | Low | safe_upgrade | pending |
 | GHSA-xx4c-jj58-r7x6 | validator | grocery-shared | Direct | validator | 5.3 | Medium | completed | Low | safe_upgrade | pending |
