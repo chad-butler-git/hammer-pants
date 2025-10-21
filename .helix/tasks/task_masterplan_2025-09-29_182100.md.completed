@@ -1,0 +1,27 @@
+# Task Masterplan (Archived)
+
+## Session Metadata
+| Field | Value |
+|-------|-------|
+| Objective | Triage the axios package vulnerabilities in the repository’s triage report, updating statuses and notes correctly. |
+| Context | Source of truth is .helix/context/scan/vulnerabilities_triage.md. Current state shows axios as pending in both the overview table and axios section, despite history notes; tasks enforce updating BOTH places. Execution rule: ONE TASK AT A TIME — only the first pending task is worked, and each task transitions pending -> in_progress -> completed. |
+| Created | 2025-09-29T18:12:00Z |
+| Status | COMPLETED_AND_ARCHIVED |
+| Archived At | 2025-09-29T18:21:00Z |
+
+## Task Execution Table
+
+| ID | Title | Status | Dependencies | Priority | Type | Agent/Tool | Description | Test Strategy |
+|----|-------|--------|--------------|----------|------|------------|-------------|---------------|
+| 1 | Set axios to in_progress in triage file | completed | [] | high | ATOMIC_EDIT | multi_edit_file | In .helix/context/scan/vulnerabilities_triage.md, find all axios entries and set status to in_progress in BOTH places: (a) the Triage Status cell for axios in the overview table row (Package=axios), and (b) the axios package section’s GHSA-4hjh-wcwx-xvwj “Triage Status”. Do not modify non-axios rows/sections. | Re-open the file and confirm: (1) Overview table row for axios shows Triage Status=in_progress, and (2) in the axios section, the line “Triage Status:” shows in_progress. Confirm no other package entries changed. |
+| 2 | Run autonomous triage_analyzer for axios | completed | [1] | high | COMPLEX_ANALYSIS | triage_analyzer (SELF-CONTAINED) | Spawn triage_analyzer focused on axios to analyze all axios vulnerabilities and directly update the triage file. It must update BOTH the overview table row and the axios section(s), populate triage notes, and set Codebase Severity and Upgrade Impact. | After agent completes, open the triage file and verify: axios overview row reflects updated final status and populated fields (Codebase Severity != TBD, Upgrade Impact != TBD); axios section(s) show matching Triage Status and have populated Triage Notes. |
+| 3 | Verify axios updates | completed | [2] | high | COMPLEX_ANALYSIS | executor_agent + TodoWrite | Re-open .helix/context/scan/vulnerabilities_triage.md and verify consistency: the overview table’s axios row status and notes match the axios section(s). Identify discrepancies; if any remain, record them and proceed to Task 4. | Confirm exact matches: (a) Overview row Package=axios shows the expected final Triage Status and updated notes; (b) axios GHSA section’s “Triage Status” matches; (c) “Triage Notes” is no longer the placeholder; (d) Codebase Severity and Upgrade Impact are set. |
+| 4 | Mark axios as completed in triage file (if still needed) | completed | [3] | medium | ATOMIC_EDIT | multi_edit_file | If triage_analyzer left axios not finalized, set status to completed in BOTH the overview table row for axios and the axios section’s “Triage Status”. Leave triage notes and other metadata intact. No changes to non-axios entries. | Re-open file and confirm BOTH locations show completed for axios, with unchanged notes/metadata. Verify no unintended diffs for other packages. |
+| 5 | Archive masterplan | completed | [4] | low | ATOMIC_EDIT | executor_agent + TodoWrite | After all tasks are completed, archive this masterplan by copying it to .helix/tasks/task_masterplan_YYYY-MM-DD_HHMMSS.md.completed and deleting .helix/tasks/task_masterplan.md. Ensure final table reflects all tasks completed before archiving. | List .helix/tasks/ and verify the timestamped .completed file exists and the original file is removed. Open the archived file to confirm it contains the final Task Execution Table with all tasks marked completed. |
+
+## File References
+
+| Purpose | File Path | Action Required |
+|---------|-----------|-----------------|
+| Vulnerability triage source of truth | .helix/context/scan/vulnerabilities_triage.md | Update axios status fields in BOTH the overview table row and axios section; triage_analyzer will auto-update this file; verify final consistency. |
+| Master plan tracking | .helix/tasks/task_masterplan.md | Use to track task state transitions; upon completion, archive to .helix/tasks/task_masterplan_YYYY-MM-DD_HHMMSS.md.completed and delete original. |
