@@ -9,21 +9,21 @@ Total Packages with Vulnerabilities: 10
 
 | CVE/GHSA ID | Package | Lockfile | Dependency Chain | Upgradeable Package | Scanned CVSS | Scanned Severity | Triage Status | Codebase Severity | Upgrade Impact | Remediation Status |
 |-------------|---------|----------|------------------|---------------------|--------------|------------------|---------------|-------------------|----------------|-------------------|
-| GHSA-p3vf-v8qc-cwcr | dompurify | grocery-web | Direct | dompurify | 9.1 | Critical | completed | Low | breaking_changes | pending |
-| GHSA-gx9m-whjm-85jf | dompurify | grocery-web | Direct | dompurify | 10.0 | High | completed | Low | breaking_changes | pending |
-| GHSA-mmhx-hmjr-r674 | dompurify | grocery-web | Direct | dompurify | 7.0 | High | completed | Low | breaking_changes | pending |
-| GHSA-vhxf-7vqr-mrjg | dompurify | grocery-web | Direct | dompurify | 4.5 | Medium | completed | Low | breaking_changes | pending |
+| GHSA-p3vf-v8qc-cwcr | dompurify | grocery-web | Direct | dompurify | 9.1 | Critical | completed | Low | breaking_changes | completed |
+| GHSA-gx9m-whjm-85jf | dompurify | grocery-web | Direct | dompurify | 10.0 | High | completed | Low | breaking_changes | completed |
+| GHSA-mmhx-hmjr-r674 | dompurify | grocery-web | Direct | dompurify | 7.0 | High | completed | Low | breaking_changes | completed |
+| GHSA-vhxf-7vqr-mrjg | dompurify | grocery-web | Direct | dompurify | 4.5 | Medium | completed | Low | breaking_changes | completed |
 | GHSA-g4jq-h2w9-997c | vite | grocery-web | Direct | vite | 2.0 | Low | completed | Low | breaking_changes | pending |
 | GHSA-jqfw-vq24-v9c3 | vite | grocery-web | Direct | vite | 2.0 | Low | completed | Low | breaking_changes | pending |
 | GHSA-g4jq-h2w9-997c | vite | grocery-shared/grocery-web | vitest → vite | vitest | 2.0 | Low | completed | Low | safe_upgrade | pending |
 | GHSA-jqfw-vq24-v9c3 | vite | grocery-shared/grocery-web | vitest → vite | vitest | 2.0 | Low | completed | Low | safe_upgrade | pending |
-| GHSA-3jfq-g458-7qm9 | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
-| GHSA-5955-9wpr-37jh | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
-| GHSA-9r2w-394v-53qc | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
-| GHSA-qq89-hq3f-393p | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
-| GHSA-r628-mhmh-qjhw | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | pending |
-| GHSA-f5x3-32g6-xq36 | tar | grocery-infra | fsevents → tar | fsevents | 6.5 | Medium | completed | Low | safe_upgrade | pending |
-| GHSA-qqgx-2p2h-9c37 | ini | grocery-infra | fsevents → ini | fsevents | 7.3 | High | completed | Low | safe_upgrade | pending |
+| GHSA-3jfq-g458-7qm9 | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | completed |
+| GHSA-5955-9wpr-37jh | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | completed |
+| GHSA-9r2w-394v-53qc | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | completed |
+| GHSA-qq89-hq3f-393p | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | completed |
+| GHSA-r628-mhmh-qjhw | tar | grocery-infra | fsevents → tar | fsevents | 8.2 | High | completed | Low | safe_upgrade | completed |
+| GHSA-f5x3-32g6-xq36 | tar | grocery-infra | fsevents → tar | fsevents | 6.5 | Medium | completed | Low | safe_upgrade | completed |
+| GHSA-qqgx-2p2h-9c37 | ini | grocery-infra | fsevents → ini | fsevents | 7.3 | High | completed | Low | safe_upgrade | completed |
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-web | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | pending |
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-shared/grocery-web | Direct | axios | 7.5 | High | completed | None | safe_upgrade | pending |
 | GHSA-4hjh-wcwx-xvwj | axios | grocery-infra | Direct | axios | 7.5 | High | completed | Low | safe_upgrade | pending |
