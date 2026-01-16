@@ -32,7 +32,7 @@
     "upgrade_command": "npm install validator@13.15.22",
     "estimated_effort": "low"
   },
-  "phase": "validate",
+  "phase": "finalize",
   "status": "in_progress",
   "plan_approved": true,
   "execution": {
@@ -54,5 +54,21 @@
       "GHSA-xx4c-jj58-r7x6"
     ],
     "cves_remaining": []
+  },
+  "result": {
+    "pr_url": null,
+    "commit_sha": "a01169e",
+    "summary": "Upgraded validator to 13.15.22, fixed 4 CVEs. Push/PR creation pending due to GitHub Push Protection.",
+    "error": {
+      "type": "push_protection_block",
+      "message": "Push rejected by GitHub Push Protection: detected secret in history (OpenAI API Key in .helix/config/settings.json at commit 2becad3).",
+      "details": {
+        "default_branch": "main",
+        "branch": "remediation/validator-13.15.22",
+        "blocked_commit": "2becad3",
+        "file": ".helix/config/settings.json",
+        "remediation": "Remove the secret from commit history (rewrite or delete file) and re-push, or explicitly unblock via the GitHub link provided by Push Protection."
+      }
+    }
   }
 }
