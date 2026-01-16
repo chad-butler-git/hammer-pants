@@ -1,0 +1,42 @@
+{
+  "package": "validator",
+  "target_version": "13.15.22",
+  "cves": [
+    "GHSA-9965-vmph-33xx",
+    "GHSA-qgmg-gppg-76g5",
+    "GHSA-vghf-hv5q-vc2g",
+    "GHSA-xx4c-jj58-r7x6"
+  ],
+  "cve_count": 4,
+  "plan": {
+    "breaking_changes": [
+      {
+        "category": "Validation behavior changes (isURL)",
+        "description": "Protocol parsing updated to use ':' delimiter to match browsers, closing a URL validation bypass.",
+        "impact": "Some URLs previously considered valid may now be rejected by isURL().",
+        "mitigation": "Review and update allowlists/tests; ensure expected protocols are configured via validator options."
+      },
+      {
+        "category": "Unicode handling (isLength)",
+        "description": "Fix in 13.15.22 accounts for Unicode variation selectors in length calculation.",
+        "impact": "Emoji/variation-selector strings may now fail or pass length checks differently.",
+        "mitigation": "Adjust length limits or messaging where needed; add tests with emoji inputs."
+      },
+      {
+        "category": "Regex performance fixes",
+        "description": "Inefficient regex complexity issues fixed in \u001b[1m>=13.7.0\u001b[0m including trim/rtrim sanitizers.",
+        "impact": "Eliminates potential ReDoS/timeouts; behavior generally unchanged for normal inputs.",
+        "mitigation": "No action beyond upgrade; ensure tests cover worst-case inputs."
+      }
+    ],
+    "upgrade_command": "npm install validator@13.15.22",
+    "estimated_effort": "low"
+  },
+  "phase": "execute",
+  "status": "in_progress",
+  "plan_approved": true,
+  "execution": {
+    "branch": "remediation/validator-13.15.22",
+    "npm_install": "success"
+  }
+}

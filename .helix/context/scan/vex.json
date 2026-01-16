@@ -1,0 +1,876 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-11T12:39:45.047408+00:00",
+    "tools": {
+      "components": [
+        {
+          "name": "helix",
+          "publisher": "Helix Security",
+          "type": "application"
+        }
+      ]
+    }
+  },
+  "serialNumber": "urn:uuid:109092fd-83df-4718-8cc6-f249df28c15c",
+  "version": 1,
+  "vulnerabilities": [
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/lodash"
+        }
+      ],
+      "analysis": {
+        "detail": "Lodash ReDoS via toNumber/trim/trimEnd requires usage of those functions. Search in grocery-api/src found no calls to _.toNumber, _.trim, or _.trimEnd. Although lodash is imported, the vulnerable functions are not invoked in production code, so this path is not reachable.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.22000783061984874.9971203393243361",
+      "id": "GHSA-29mw-wpgm-hmr9",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.3,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/@remix-run/router"
+        }
+      ],
+      "analysis": {
+        "detail": "Our apps use <BrowserRouter> (Declarative Mode) and only navigate to static internal paths. We do not pass untrusted input into navigate(), Link, or redirect(). Thus the open-redirect XSS path in @remix-run/router is not reachable in our code.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.46363672615554286.0029894472776810233",
+      "id": "GHSA-2w69-qvjg-hvjx",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.0,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/lodash"
+        }
+      ],
+      "analysis": {
+        "detail": "Lodash is a direct dependency at version 4.17.19. Vulnerable API: _.template. In grocery-api/src/routes/items.js, line ~54, _.template is compiled and then invoked with user-controlled input (req.body.name) inside the POST /items handler. This is production server code and represents reachable usage of the vulnerable API. Upgrade to 4.17.21 eliminates the issue.",
+        "state": "exploitable"
+      },
+      "bom-ref": "BomRef.3816058366173256.16408938454692112",
+      "id": "GHSA-35jh-r3h4-6jhm",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "tar is not imported or used in our source code; it appears only as a transitive dependency (e.g., under fsevents/jest tooling). No tar API calls (tar.x/extract/create/list) are present in src. Dev-only context limits exposure.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.8147469885754716.13327106832446356",
+      "id": "GHSA-3jfq-g458-7qm9",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tmp"
+        }
+      ],
+      "analysis": {
+        "detail": "tmp vulnerability is in a transitive of eslint (devDependency). We do not import eslint/inquirer/external-editor/tmp in application code. The vulnerable path is only used by ESLint CLI during local linting/CI and is not reachable in production runtime.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.28092876712944126.5407894586766868",
+      "id": "GHSA-52f5-9888-hmc6",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 2.5,
+          "severity": "low",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "No application code imports tar or calls tar.x/extract. Vulnerable functionality exists only if untrusted archives are extracted at runtime. Our usage is transitive within dev tooling (fsevents/jest) and not reachable in production.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.2275044966055385.4921398158234569",
+      "id": "GHSA-5955-9wpr-37jh",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/qs"
+        }
+      ],
+      "analysis": {
+        "detail": "Express 4.21.2 uses qs 6.13.0 for query parsing (see grocery-api/node_modules/express/package.json). Express middleware query.js calls qs.parse() on every request with extended parser enabled. The CVE describes an arrayLimit bypass for bracket notation, enabling DoS via memory exhaustion with unauthenticated requests. Our app exposes public GET endpoints and relies on Express query parsing. Therefore the vulnerability is exploitable and needs remediation.",
+        "state": "exploitable"
+      },
+      "bom-ref": "BomRef.3016984187410907.5025209629559502",
+      "id": "GHSA-6rw7-vpxm-498p",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.7,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/jws"
+        }
+      ],
+      "analysis": {
+        "detail": "This advisory affects direct use of jws.createVerify with HMAC and user-influenced header/payload for secret lookup. Our code uses auth0/node-jsonwebtoken APIs (jwt.sign, jwt.verify) and does not call jws directly. The advisory explicitly notes node-jsonwebtoken users are not affected.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.9551970260731732.19702226983334092",
+      "id": "GHSA-869p-cjfg-cm3x",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.5,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/jsonwebtoken"
+        }
+      ],
+      "analysis": {
+        "detail": "We use HS256 with a static symmetric secret and do not use asymmetric keys. The advisory affects invalid asymmetric key type/algorithm combinations; our configuration does not meet these conditions. File: grocery-api/src/utils/auth.js shows HS256 usage.",
+        "justification": "requires_configuration",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.511862123844295.842439552194512",
+      "id": "GHSA-8cf7-32gw-wr33",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.1,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/fsevents"
+        }
+      ],
+      "analysis": {
+        "detail": "fsevents v1.x (1.2.9 in grocery-infra optionalDependencies) is a macOS-only optional file-watching binary. Our production runs on Linux containers and no application code imports fsevents; references only appear under node_modules watchers (jest/chokidar/vite). Therefore the code injection risk from prebuilt binaries is not reachable in production.",
+        "justification": "requires_environment",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.7713901667165227.8206724095105862",
+      "id": "GHSA-8r6j-v8pm-fqw3",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 9.8,
+          "severity": "critical",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/validator"
+        }
+      ],
+      "analysis": {
+        "detail": "validator is a direct dependency in grocery-shared (13.5.2) but is not imported in production code. Grep found no imports in grocery-api/src, grocery-shared/src, or grocery-web/src; only test usage in grocery-shared/test/Item.test.js. Vulnerable API is isURL; no production usage paths reach it.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.4649562244295856.4095212104246613",
+      "id": "GHSA-9965-vmph-33xx",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 6.1,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/react-router"
+        }
+      ],
+      "analysis": {
+        "detail": "We use react-router-dom with navigate() and <Link> only to internal paths hardcoded from app state. No untrusted input is passed as navigation targets, so the external redirect issue in react-router is not reachable.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.6122262790844106.10245833667175885",
+      "id": "GHSA-9jcx-v3wj-wh4m",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 6.5,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "Symlink/path traversal issues in tar extraction do not affect us because we do not extract untrusted tar archives in application code. No imports of 'tar' found; dependency is transitive in dev tooling.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.6989573973943666.530918500357999",
+      "id": "GHSA-9r2w-394v-53qc",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/semver"
+        }
+      ],
+      "analysis": {
+        "detail": "semver vulnerable to ReDoS via new Range when fed untrusted ranges. In this repo it is only pulled via jest -> @jest/core -> jest-snapshot for test-time tooling. No imports of semver or @jest/* are present in production src/ code, and no user input reaches semver in production. Therefore not reachable in production context.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.6169679230843731.3408614841363874",
+      "id": "GHSA-c2qf-rxjj-qqgw",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.5,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "The DoS while parsing tar files is not reachable: our codebase does not import 'tar' or parse tar archives; presence is transitive in dev tooling only. No production exposure.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.0790577153854658.37514427815343854",
+      "id": "GHSA-f5x3-32g6-xq36",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 6.5,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/minimatch"
+        }
+      ],
+      "analysis": {
+        "detail": "minimatch ReDoS in braceExpand is only reachable via jest -> @jest/reporters -> glob during test runs. No imports or requires of minimatch in any src/ directories across grocery-api, grocery-shared, or grocery-web. Jest is a devDependency only, not used in production runtime.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.4840216441308528.6326501560026784",
+      "id": "GHSA-f8q6-p94x-37v3",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.5,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/debug"
+        }
+      ],
+      "analysis": {
+        "detail": "Installed debug version is 4.4.1 (package-lock), which includes the fix (>=4.3.1). No direct imports of debug in our repo; it\u2019s only present transitively via nock used in grocery-infra/test/importSampleData.test.js. The vulnerable behavior requires passing untrusted input to the %o formatter, which we do not do. Dev-only usage further limits exposure.",
+        "justification": "code_not_present",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.02511794483672669.19014677678524772",
+      "id": "GHSA-gxpj-cx7g-858c",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 3.7,
+          "severity": "low",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/jsonwebtoken"
+        }
+      ],
+      "analysis": {
+        "detail": "Our implementation calls jwt.verify with a static symmetric secret and does not use a key-retrieval callback or mix asymmetric and symmetric verification. The misconfiguration described is not present. File: grocery-api/src/utils/auth.js.",
+        "justification": "requires_configuration",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.1544223534285607.9370195320910871",
+      "id": "GHSA-hjrf-2m68-5959",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.0,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/js-yaml"
+        }
+      ],
+      "analysis": {
+        "detail": "js-yaml is only used by dev tooling (eslint and @istanbuljs/load-nyc-config via jest coverage). No direct js-yaml imports in application src, and no YAML parsing in production runtime paths. Vulnerable prototype pollution route does not reach our production code.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.8831642884856975.24161287447608093",
+      "id": "GHSA-mh29-5h37-fv8m",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.3,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/validator"
+        }
+      ],
+      "analysis": {
+        "detail": "validator not imported in production code paths. No references to validator.* in src directories. This GHSA is ReDoS in older versions pre-13.7.0; our version 13.5.2 exists but not used in prod. Test-only reference in grocery-shared/test/Item.test.js.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.6393159945241593.30862201279951273",
+      "id": "GHSA-qgmg-gppg-76g5",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.3,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "Duplicate confirmation: tar is not used in app code; only transitive in dev tooling. No runtime extraction of archives in production.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.829106599660904.7124414750697231",
+      "id": "GHSA-qq89-hq3f-393p",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/ini"
+        }
+      ],
+      "analysis": {
+        "detail": "This ini advisory is reached via fsevents \u2192 node-pre-gyp \u2192 rc \u2192 ini. It affects install-time configuration parsing primarily on macOS where fsevents applies; our production runs on Linux, and our application code does not import rc or ini. Therefore it is not reachable in production runtime.",
+        "justification": "requires_environment",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.06715166055786115.9115085661101128",
+      "id": "GHSA-qqgx-2p2h-9c37",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.3,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/jsonwebtoken"
+        }
+      ],
+      "analysis": {
+        "detail": "The 'none' algorithm bypass requires a falsy secret/key and no algorithms specified. Our verifyToken uses a non-falsy static secret; verifyShareToken explicitly sets algorithms: ['HS256']. There is no code path with a falsy secret. File: grocery-api/src/utils/auth.js.",
+        "justification": "requires_configuration",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.8898418777386251.5154804148990286",
+      "id": "GHSA-qwph-4952-7xr6",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 6.4,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/tar"
+        }
+      ],
+      "analysis": {
+        "detail": "Symlink-related arbitrary file write in tar requires extracting crafted archives. Our codebase has no imports of 'tar'; dependency is transitive in dev tooling only. Not reachable in production.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.25277933932946783.858617438588411",
+      "id": "GHSA-r628-mhmh-qjhw",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 8.2,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/brace-expansion"
+        }
+      ],
+      "analysis": {
+        "detail": "brace-expansion ReDoS in expand() is only present via jest \u2192 @jest/core \u2192 @jest/reporters \u2192 glob \u2192 minimatch \u2192 brace-expansion. Our production source does not import glob/minimatch/brace-expansion, and Jest usage is confined to test/dev code (no references in src/). Therefore this code path is not reachable in production.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.26857268663074774.640097629640382",
+      "id": "GHSA-v6h2-p8h4-qcjw",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 3.1,
+          "severity": "low",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/validator"
+        }
+      ],
+      "analysis": {
+        "detail": "Affected API is isLength with Unicode variation selectors; no imports of validator in production. Grep across src directories found no usage; only tests reference validator in grocery-shared/test/Item.test.js.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.04313399571691001.46507103525683624",
+      "id": "GHSA-vghf-hv5q-vc2g",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 7.7,
+          "severity": "high",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/minimist"
+        }
+      ],
+      "analysis": {
+        "detail": "Our codebase does not import or require minimist anywhere. Grep shows usage only inside node_modules for developer tooling (e.g., @bcoe/v8-coverage gulpfile, tsconfig-paths options, esrecurse gulpfile). The vulnerability requires control over CLI arguments passed to minimist, which does not occur in our production application paths. Therefore the vulnerable code is not reachable from our application.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.4440938802833446.549369654548985",
+      "id": "GHSA-vh95-rmgr-6w4m",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.6,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/fast-xml-parser"
+        }
+      ],
+      "analysis": {
+        "detail": "fast-xml-parser is a direct dependency (3.21.1) in grocery-infra. Our script at /home/ubuntu/helix/hammerpants/grocery-infra/scripts/xmlImport.js imports fast-xml-parser and calls parser.validate(...) and parser.parse(...) on XML content from a file path that can be provided via the --file CLI argument. The GHSA advisory describes prototype pollution via __proto__ tag/attribute during parsing, which is reachable in our usage because we parse untrusted XML files. Tests at /home/ubuntu/helix/hammerpants/grocery-infra/test/xmlImport.test.js also exercise this path. Upgrade to >=4.1.2 (recommend 4.4.1+) is required and introduces breaking API changes.",
+        "state": "exploitable"
+      },
+      "bom-ref": "BomRef.9655553008201374.7356967978380519",
+      "id": "GHSA-x3cc-x39p-42qx",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 6.5,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/minimist"
+        }
+      ],
+      "analysis": {
+        "detail": "No direct imports or requires of minimist in our source. All references are inside node_modules and dev tooling. Prototype pollution in minimist requires parsing attacker-controlled CLI arguments, which is not part of our runtime. Thus the vulnerable APIs (setKey in index.js) are not reachable from our application.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.8393239767633887.28360428500018064",
+      "id": "GHSA-xvch-5gv4-984h",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 9.8,
+          "severity": "critical",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/validator"
+        }
+      ],
+      "analysis": {
+        "detail": "Inefficient regex in trim/rtrim prior to 13.7.0. Our repo does not call validator.trim/rtrim in production. No imports of validator in src directories; only test code imports validator.",
+        "justification": "code_not_reachable",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.6761409422919779.8164915687847851",
+      "id": "GHSA-xx4c-jj58-r7x6",
+      "ratings": [
+        {
+          "method": "CVSSv3",
+          "score": 5.3,
+          "severity": "medium",
+          "source": {
+            "name": "OSV"
+          }
+        }
+      ],
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    },
+    {
+      "affects": [
+        {
+          "ref": "pkg:npm/fsevents"
+        }
+      ],
+      "analysis": {
+        "detail": "Malware advisory affects fsevents v1.x fetching prebuilt binaries on macOS. Our production is Linux; fsevents is optional and not used or imported by our app. Dev tools may reference it under node_modules, but this does not impact runtime.",
+        "justification": "requires_environment",
+        "state": "not_affected"
+      },
+      "bom-ref": "BomRef.9684016042571721.2967752438563094",
+      "id": "MAL-2023-462",
+      "source": {
+        "name": "OSV",
+        "url": "https://osv.dev"
+      }
+    }
+  ],
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6"
+}

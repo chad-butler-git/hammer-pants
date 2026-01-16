@@ -1,0 +1,347 @@
+{
+  "results": [
+    {
+      "source": {
+        "path": "/home/ubuntu/helix/hammerpants/grocery-shared/grocery-web/package-lock.json",
+        "type": "lockfile"
+      },
+      "packages": [
+        {
+          "package": {
+            "name": "@remix-run/router",
+            "version": "1.23.0",
+            "ecosystem": "npm"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2026-01-08T21:11:17Z",
+              "published": "2026-01-08T20:54:18Z",
+              "schema_version": "1.7.3",
+              "id": "GHSA-2w69-qvjg-hvjx",
+              "aliases": [
+                "CVE-2026-22029"
+              ],
+              "summary": "React Router vulnerable to XSS via Open Redirects",
+              "details": "React Router (and Remix v1/v2) SPA open navigation redirects originating from loaders or actions in [Framework Mode](https://reactrouter.com/start/modes#framework), [Data Mode](https://reactrouter.com/start/modes#data), or the unstable RSC modes can result in unsafe URLs causing unintended javascript execution on the client. This is only an issue if developers are creating redirect paths from untrusted content or via an open redirect.\n\n\u003e [!NOTE]\n\u003e This does not impact applications that use [Declarative Mode](https://reactrouter.com/start/modes#declarative) (`\u003cBrowserRouter\u003e`).",
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N"
+                }
+              ],
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "react-router",
+                    "purl": "pkg:npm/react-router"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "7.0.0"
+                        },
+                        {
+                          "fixed": "7.12.0"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 7.11.0",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/01/GHSA-2w69-qvjg-hvjx/GHSA-2w69-qvjg-hvjx.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "@remix-run/router",
+                    "purl": "pkg:npm/%40remix-run/router"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "1.23.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "last_known_affected_version_range": "\u003c= 1.23.1",
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/01/GHSA-2w69-qvjg-hvjx/GHSA-2w69-qvjg-hvjx.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-2w69-qvjg-hvjx"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/remix-run/react-router"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-79"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2026-01-08T20:54:18Z",
+                "nvd_published_at": null,
+                "severity": "HIGH"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-2w69-qvjg-hvjx"
+              ],
+              "aliases": [
+                "CVE-2026-22029",
+                "GHSA-2w69-qvjg-hvjx"
+              ],
+              "max_severity": "8.0"
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "js-yaml",
+            "version": "4.1.0",
+            "ecosystem": "npm"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2025-11-17T15:20:43Z",
+              "published": "2025-11-14T14:29:48Z",
+              "schema_version": "1.7.3",
+              "id": "GHSA-mh29-5h37-fv8m",
+              "aliases": [
+                "CVE-2025-64718"
+              ],
+              "summary": "js-yaml has prototype pollution in merge (\u003c\u003c)",
+              "details": "### Impact\n\nIn js-yaml 4.1.0, 4.0.0, and 3.14.1 and below, it's possible for an attacker to modify the prototype of the result of a parsed yaml document via prototype pollution (`__proto__`). All users who parse untrusted yaml documents may be impacted.\n\n### Patches\n\nProblem is patched in js-yaml 4.1.1 and 3.14.2.\n\n### Workarounds\n\nYou can protect against this kind of attack on the server by using `node --disable-proto=delete` or `deno` (in Deno, pollution protection is on by default).\n\n### References\n\nhttps://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.html",
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+                }
+              ],
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "js-yaml",
+                    "purl": "pkg:npm/js-yaml"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "4.0.0"
+                        },
+                        {
+                          "fixed": "4.1.1"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/11/GHSA-mh29-5h37-fv8m/GHSA-mh29-5h37-fv8m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "js-yaml",
+                    "purl": "pkg:npm/js-yaml"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "0"
+                        },
+                        {
+                          "fixed": "3.14.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/11/GHSA-mh29-5h37-fv8m/GHSA-mh29-5h37-fv8m.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nodeca/js-yaml/security/advisories/GHSA-mh29-5h37-fv8m"
+                },
+                {
+                  "type": "ADVISORY",
+                  "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-64718"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nodeca/js-yaml/commit/383665ff4248ec2192d1274e934462bb30426879"
+                },
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/nodeca/js-yaml/commit/5278870a17454fe8621dbd8c445c412529525266"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/nodeca/js-yaml"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-1321"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2025-11-14T14:29:48Z",
+                "nvd_published_at": "2025-11-13T16:15:57Z",
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-mh29-5h37-fv8m"
+              ],
+              "aliases": [
+                "CVE-2025-64718",
+                "GHSA-mh29-5h37-fv8m"
+              ],
+              "max_severity": "5.3"
+            }
+          ]
+        },
+        {
+          "package": {
+            "name": "react-router",
+            "version": "6.30.1",
+            "ecosystem": "npm"
+          },
+          "vulnerabilities": [
+            {
+              "modified": "2026-01-08T21:11:17Z",
+              "published": "2026-01-08T20:48:21Z",
+              "schema_version": "1.7.3",
+              "id": "GHSA-9jcx-v3wj-wh4m",
+              "aliases": [
+                "CVE-2025-68470"
+              ],
+              "summary": "React Router has unexpected external redirect via untrusted paths",
+              "details": "An attacker-supplied path can be crafted so that when a React Router application navigates to it via `navigate()`, `\u003cLink\u003e`, or `redirect()`, the app performs a navigation/redirect to an external URL. This is only an issue if developers pass untrusted content into navigation paths in their application code.",
+              "severity": [
+                {
+                  "type": "CVSS_V3",
+                  "score": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+                }
+              ],
+              "affected": [
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "react-router",
+                    "purl": "pkg:npm/react-router"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "6.0.0"
+                        },
+                        {
+                          "fixed": "6.30.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/01/GHSA-9jcx-v3wj-wh4m/GHSA-9jcx-v3wj-wh4m.json"
+                  }
+                },
+                {
+                  "package": {
+                    "ecosystem": "npm",
+                    "name": "react-router",
+                    "purl": "pkg:npm/react-router"
+                  },
+                  "ranges": [
+                    {
+                      "type": "SEMVER",
+                      "events": [
+                        {
+                          "introduced": "7.0.0"
+                        },
+                        {
+                          "fixed": "7.9.6"
+                        }
+                      ]
+                    }
+                  ],
+                  "database_specific": {
+                    "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/01/GHSA-9jcx-v3wj-wh4m/GHSA-9jcx-v3wj-wh4m.json"
+                  }
+                }
+              ],
+              "references": [
+                {
+                  "type": "WEB",
+                  "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-9jcx-v3wj-wh4m"
+                },
+                {
+                  "type": "PACKAGE",
+                  "url": "https://github.com/remix-run/react-router"
+                }
+              ],
+              "database_specific": {
+                "cwe_ids": [
+                  "CWE-601"
+                ],
+                "github_reviewed": true,
+                "github_reviewed_at": "2026-01-08T20:48:21Z",
+                "nvd_published_at": null,
+                "severity": "MODERATE"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "ids": [
+                "GHSA-9jcx-v3wj-wh4m"
+              ],
+              "aliases": [
+                "CVE-2025-68470",
+                "GHSA-9jcx-v3wj-wh4m"
+              ],
+              "max_severity": "6.5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}

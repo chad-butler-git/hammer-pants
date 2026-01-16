@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "scan_date": "2026-01-11T12:39:44.716433",
+    "lockfile": "package-lock.json",
+    "lockfile_path": "/home/ubuntu/helix/hammerpants/grocery-shared/package-lock.json",
+    "total_packages": 274,
+    "vulnerable_packages": 2,
+    "tools_used": [
+      "osv-scanner-cli",
+      "lockfile-parser"
+    ],
+    "pipeline_version": "2.0-lockfile-based"
+  },
+  "vulnerabilities": [
+    {
+      "id": "GHSA-mh29-5h37-fv8m",
+      "package": "js-yaml",
+      "version": "3.14.1",
+      "severity": "MODERATE",
+      "cvss_score": 5.3,
+      "summary": "js-yaml has prototype pollution in merge (<<)",
+      "description": "### Impact\n\nIn js-yaml 4.1.0, 4.0.0, and 3.14.1 and below, it's possible for an attacker to modify the prototype of the result of a parsed yaml document via prototype pollution (`__proto__`). All users who parse untrusted yaml documents may be impacted.\n\n### Patches\n\nProblem is patched in js-yaml 4.1.1 and 3.14.2.\n\n### Workarounds\n\nYou can protect against this kind of attack on the server by using `node --disable-proto=delete` or `deno` (in Deno, pollution protection is on by default).\n\n### References\n\nhttps://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.html",
+      "fix": {
+        "available": true,
+        "versions": [
+          "4.1.1",
+          "3.14.2"
+        ],
+        "direct_upgrade": "npm install js-yaml@4.1.1",
+        "suggested_fix": "npm install jest@latest"
+      },
+      "dependency": {
+        "is_direct": false,
+        "direct_parent": "jest",
+        "chain": [
+          "grocery-shared",
+          "jest",
+          "@jest/core",
+          "@jest/transform",
+          "babel-plugin-istanbul",
+          "@istanbuljs/load-nyc-config",
+          "js-yaml"
+        ],
+        "depth": 6
+      },
+      "references": [
+        "https://github.com/nodeca/js-yaml/security/advisories/GHSA-mh29-5h37-fv8m",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-64718",
+        "https://github.com/nodeca/js-yaml/commit/383665ff4248ec2192d1274e934462bb30426879",
+        "https://github.com/nodeca/js-yaml/commit/5278870a17454fe8621dbd8c445c412529525266",
+        "https://github.com/nodeca/js-yaml"
+      ]
+    },
+    {
+      "id": "GHSA-9965-vmph-33xx",
+      "package": "validator",
+      "version": "13.5.2",
+      "severity": "MODERATE",
+      "cvss_score": 6.1,
+      "summary": "validator.js has a URL validation bypass vulnerability in its isURL function",
+      "description": "A URL validation bypass vulnerability exists in validator.js prior to version 13.15.20. The isURL() function uses '://' as a delimiter to parse protocols, while browsers use ':' as the delimiter. This parsing difference allows attackers to bypass protocol and domain validation by crafting URLs leading to XSS and Open Redirect attacks.",
+      "fix": {
+        "available": true,
+        "versions": [
+          "13.15.20"
+        ],
+        "direct_upgrade": "npm install validator@13.15.20",
+        "suggested_fix": null
+      },
+      "dependency": {
+        "is_direct": true,
+        "direct_parent": "validator",
+        "chain": [
+          "grocery-shared",
+          "validator"
+        ],
+        "depth": 1
+      },
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-56200",
+        "https://github.com/validatorjs/validator.js/issues/2600",
+        "https://github.com/validatorjs/validator.js/pull/2608",
+        "https://github.com/validatorjs/validator.js/commit/cbef5088f02d36caf978f378bb845fe49bdc0809",
+        "https://gist.github.com/junan-98/27ae092aa40e2a057d41a0f95148f666",
+        "https://gist.github.com/junan-98/a93130505b258b9e4ec9f393e7533596",
+        "https://github.com/validatorjs/validator.js",
+        "https://github.com/validatorjs/validator.js/releases/tag/13.15.20",
+        "http://validatorjs.com"
+      ]
+    },
+    {
+      "id": "GHSA-qgmg-gppg-76g5",
+      "package": "validator",
+      "version": "13.5.2",
+      "severity": "MODERATE",
+      "cvss_score": 5.3,
+      "summary": "Inefficient Regular Expression Complexity in validator.js",
+      "description": "validator.js prior to 13.7.0 is vulnerable to Inefficient Regular Expression Complexity",
+      "fix": {
+        "available": true,
+        "versions": [
+          "13.7.0"
+        ],
+        "direct_upgrade": "npm install validator@13.7.0",
+        "suggested_fix": null
+      },
+      "dependency": {
+        "is_direct": true,
+        "direct_parent": "validator",
+        "chain": [
+          "grocery-shared",
+          "validator"
+        ],
+        "depth": 1
+      },
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-3765",
+        "https://github.com/validatorjs/validator.js/commit/496fc8b2a7f5997acaaec33cc44d0b8dba5fb5e1",
+        "https://github.com/validatorjs/validator.js",
+        "https://huntr.dev/bounties/c37e975c-21a3-4c5f-9b57-04d63b28cfc9"
+      ]
+    },
+    {
+      "id": "GHSA-vghf-hv5q-vc2g",
+      "package": "validator",
+      "version": "13.5.2",
+      "severity": "HIGH",
+      "cvss_score": 7.7,
+      "summary": "Validator is Vulnerable to Incomplete Filtering of One or More Instances of Special Elements",
+      "description": "Versions of the package validator before 13.15.22 are vulnerable to Incomplete Filtering of One or More Instances of Special Elements in the isLength() function that does not take into account Unicode variation selectors (\\uFE0F, \\uFE0E) appearing in a sequence which lead to improper string length calculation. This can lead to an application using isLength for input validation accepting strings significantly longer than intended, resulting in issues like data truncation in databases, buffer overflows in other system components, or denial-of-service.",
+      "fix": {
+        "available": true,
+        "versions": [
+          "13.15.22"
+        ],
+        "direct_upgrade": "npm install validator@13.15.22",
+        "suggested_fix": null
+      },
+      "dependency": {
+        "is_direct": true,
+        "direct_parent": "validator",
+        "chain": [
+          "grocery-shared",
+          "validator"
+        ],
+        "depth": 1
+      },
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-12758",
+        "https://github.com/validatorjs/validator.js/pull/2616",
+        "https://github.com/validatorjs/validator.js/commit/d457ecaf55b0f3d8bd379d82757425d0d13dd382",
+        "https://gist.github.com/koral--/ad31208b25b9e3d1e2e35f1d4d72572e",
+        "https://github.com/validatorjs/validator.js",
+        "https://security.snyk.io/vuln/SNYK-JS-VALIDATOR-13653476"
+      ]
+    },
+    {
+      "id": "GHSA-xx4c-jj58-r7x6",
+      "package": "validator",
+      "version": "13.5.2",
+      "severity": "MODERATE",
+      "cvss_score": 5.3,
+      "summary": "Inefficient Regular Expression Complexity in Validator.js",
+      "description": "### Impact\nVersions of `validator` prior to 13.7.0 are affected by an inefficient Regular Expression complexity  when using the `rtrim` and `trim` sanitizers.\n\n### Patches\nThe problem has been patched in validator 13.7.0",
+      "fix": {
+        "available": true,
+        "versions": [
+          "13.7.0"
+        ],
+        "direct_upgrade": "npm install validator@13.7.0",
+        "suggested_fix": null
+      },
+      "dependency": {
+        "is_direct": true,
+        "direct_parent": "validator",
+        "chain": [
+          "grocery-shared",
+          "validator"
+        ],
+        "depth": 1
+      },
+      "references": [
+        "https://github.com/validatorjs/validator.js/security/advisories/GHSA-xx4c-jj58-r7x6",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-3765",
+        "https://github.com/validatorjs/validator.js/issues/1599",
+        "https://github.com/validatorjs/validator.js/pull/1738",
+        "https://github.com/validatorjs/validator.js",
+        "https://huntr.dev/bounties/c37e975c-21a3-4c5f-9b57-04d63b28cfc9"
+      ]
+    }
+  ],
+  "summary": {
+    "by_severity": {
+      "critical": 0,
+      "high": 1,
+      "medium": 4,
+      "low": 0
+    },
+    "by_type": {
+      "direct": 1,
+      "transitive": 1
+    },
+    "total_vulnerabilities": 5
+  }
+}

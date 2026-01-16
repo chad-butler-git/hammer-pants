@@ -35,7 +35,7 @@ When user requests: "triage [package] vulnerabilities"
 **Note:** vulnerabilities_triage.md uses one row per CVE + lockfile combination to enable independent triage tracking when the same vulnerability affects multiple lockfiles
 
 ### Package Remediation Template
-When user requests: "remediate [package]" or "apply remediation for [package]" or "fix [package] vulnerabilities" or "remediate [package] package"
+When user requests: "apply remediation for [package]" or "fix [package] vulnerabilities"
 **Plan should be:**
 1. Read vulnerabilities_triage.md to extract completed triage analysis for the specific package
 2. Delegate to remediation_agent with the specific package name and remediation recommendations
