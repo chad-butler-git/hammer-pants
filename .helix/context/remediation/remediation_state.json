@@ -24,7 +24,7 @@
       },
       {
         "category": "Regex performance fixes",
-        "description": "Inefficient regex complexity issues fixed in \u001b[1m>=13.7.0\u001b[0m including trim/rtrim sanitizers.",
+        "description": "Inefficient regex complexity issues fixed in >=13.7.0 including trim/rtrim sanitizers.",
         "impact": "Eliminates potential ReDoS/timeouts; behavior generally unchanged for normal inputs.",
         "mitigation": "No action beyond upgrade; ensure tests cover worst-case inputs."
       }
@@ -44,5 +44,15 @@
     "test_errors": [],
     "fix_attempts": 0,
     "fixes_applied": []
+  },
+  "validation": {
+    "rescan_completed": true,
+    "cves_resolved": [
+      "GHSA-9965-vmph-33xx",
+      "GHSA-qgmg-gppg-76g5",
+      "GHSA-vghf-hv5q-vc2g",
+      "GHSA-xx4c-jj58-r7x6"
+    ],
+    "cves_remaining": []
   }
 }

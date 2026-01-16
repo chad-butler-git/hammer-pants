@@ -10,10 +10,10 @@ Total Packages with Vulnerabilities: 18
 | CVE/GHSA ID | Package | Lockfile | Dependency Chain | Upgradeable Package | Scanned CVSS | Scanned Severity | Triage Status | Codebase Severity | Upgrade Impact | Remediation Status |
 |-------------|---------|----------|------------------|---------------------|--------------|------------------|---------------|-------------------|----------------|-------------------|
 | GHSA-mh29-5h37-fv8m | js-yaml | grocery-shared/package-lock.json | jest → @jest/core → @jest/transform → babel-plugin-istanbul → @istanbuljs/load-nyc-config → js-yaml | jest | 5.3 | MODERATE | completed | Low | safe_upgrade | pending |
-| GHSA-9965-vmph-33xx | validator | grocery-shared/package-lock.json | Direct | validator | 6.1 | MODERATE | completed | Low | safe_upgrade | pending |
-| GHSA-qgmg-gppg-76g5 | validator | grocery-shared/package-lock.json | Direct | validator | 5.3 | MODERATE | completed | Low | safe_upgrade | pending |
-| GHSA-vghf-hv5q-vc2g | validator | grocery-shared/package-lock.json | Direct | validator | 7.7 | HIGH | completed | Low | safe_upgrade | pending |
-| GHSA-xx4c-jj58-r7x6 | validator | grocery-shared/package-lock.json | Direct | validator | 5.3 | MODERATE | completed | Low | safe_upgrade | pending |
+| GHSA-9965-vmph-33xx | validator | grocery-shared/package-lock.json | Direct | validator | 6.1 | MODERATE | completed | Low | safe_upgrade | completed |
+| GHSA-qgmg-gppg-76g5 | validator | grocery-shared/package-lock.json | Direct | validator | 5.3 | MODERATE | completed | Low | safe_upgrade | completed |
+| GHSA-vghf-hv5q-vc2g | validator | grocery-shared/package-lock.json | Direct | validator | 7.7 | HIGH | completed | Low | safe_upgrade | completed |
+| GHSA-xx4c-jj58-r7x6 | validator | grocery-shared/package-lock.json | Direct | validator | 5.3 | MODERATE | completed | Low | safe_upgrade | completed |
 | GHSA-v6h2-p8h4-qcjw | brace-expansion | grocery-infra/package-lock.json | jest → @jest/core → @jest/reporters → glob → minimatch → brace-expansion | jest | 3.1 | LOW | completed | Low | safe_upgrade | pending |
 | GHSA-gxpj-cx7g-858c | debug | grocery-infra/package-lock.json | nock → debug | nock | 3.7 | LOW | completed | Low | safe_upgrade | pending |
 | GHSA-x3cc-x39p-42qx | fast-xml-parser | grocery-infra/package-lock.json | Direct | fast-xml-parser | 6.5 | MODERATE | completed | Moderate | breaking_changes | pending |
