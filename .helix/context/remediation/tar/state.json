@@ -1,0 +1,54 @@
+{
+  "target_version": "6.2.1",
+  "cves": [
+    "GHSA-3jfq-g458-7qm9",
+    "GHSA-5955-9wpr-37jh",
+    "GHSA-9r2w-394v-53qc",
+    "GHSA-f5x3-32g6-xq36",
+    "GHSA-qq89-hq3f-393p",
+    "GHSA-r628-mhmh-qjhw"
+  ],
+  "cve_count": 6,
+  "plan": {
+    "breaking_changes": [
+      {
+        "category": "Major version bump (4.x → 6.x)",
+        "description": "tar 6.x includes internal changes and hardened path/symlink handling with Node.js engine >=10.",
+        "impact": "No direct usage in this repo; transitive consumers like node-pre-gyp should remain compatible; low risk.",
+        "mitigation": "Use npm overrides to force tar >=6.2.1; run CI install/build and Windows smoke tests if applicable."
+      },
+      {
+        "category": "Path normalization behavior",
+        "description": "tar 6.x always normalizes entry paths and strengthens directory cache logic.",
+        "impact": "Could affect string comparisons of entry.path in custom scripts; none found here.",
+        "mitigation": "No action required; just run regression tests."
+      }
+    ],
+    "upgrade_command": "npm install --save-dev tar@6.2.1",
+    "estimated_effort": "low",
+    "approved": true
+  },
+  "phase": "execute",
+  "status": "blocked_external",
+  "error": {
+    "type": "environment_dependency_missing",
+    "message": "docker-compose not found during grocery-infra build step",
+    "manual_fix": "Install Docker Compose or adjust build script. Example: 'sudo apt-get update && sudo apt-get install -y docker-compose-plugin' then use 'docker compose build', or modify package.json build script to skip Docker in CI."
+  },
+  "execution": {
+    "branch": "remediation/tar-6.2.1",
+    "npm_install": "success",
+    "build_status": "failed",
+    "build_errors": [
+      "sh: 1: docker-compose: not found"
+    ],
+    "test_status": "failed",
+    "test_errors": [
+      "Cannot find module '@playwright/test' from 'grocery-infra/e2e/shopping.spec.js'",
+      "Invalid Store: \"id\" must be a valid GUID",
+      "generateSampleData non-determinism"
+    ],
+    "fix_attempts": 0,
+    "fixes_applied": []
+  }
+}
