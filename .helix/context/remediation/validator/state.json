@@ -27,7 +27,7 @@
     "estimated_effort": "low",
     "approved": true
   },
-  "phase": "execute",
+  "phase": "finalize",
   "status": "in_progress",
   "execution": {
     "branch": "remediation/validator-13.15.22",
@@ -49,6 +49,11 @@
         ]
       }
     ]
+  },
+  "validation": {
+    "rescan_completed": true,
+    "cves_resolved": ["GHSA-vghf-hv5q-vc2g", "GHSA-9965-vmph-33xx", "GHSA-qgmg-gppg-76g5", "GHSA-xx4c-jj58-r7x6"],
+    "cves_remaining": []
   },
   "error": {}
 }
