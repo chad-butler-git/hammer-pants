@@ -33,6 +33,17 @@
     "branch": "remediation/validator-13.15.22",
     "npm_install": "success",
     "build_status": "success",
-    "build_errors": []
+    "build_errors": [],
+    "test_status": "failed",
+    "test_errors": [
+      "grocery-api tests returned multiple 400s due to Joi GUID validation on ids (storeId, item.id) and server listen conflicts; grocery-shared tests passed"
+    ],
+    "fix_attempts": 0,
+    "fixes_applied": []
+  },
+  "error": {
+    "type": "push_protection_block",
+    "message": "GitHub push protection blocked branch push due to detected secret in .helix/config/settings.json (OpenAI API Key). Remote rejected refs/heads/remediation/validator-13.15.22 (GH013).",
+    "manual_fix": "Remove or rotate the exposed secret and rewrite history to delete it from commits. Options: 1) git filter-repo or BFG to purge .helix/config/settings.json from history; 2) Move secret to env/secret store and add path to .gitignore; 3) After purging, force-push the branch; or, if allowed, use the provided GitHub URL to explicitly allow the secret push (not recommended)."
   }
 }

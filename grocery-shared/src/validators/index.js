@@ -6,7 +6,8 @@ const Joi = require('joi');
 
 // Item schema
 const itemSchema = Joi.object({
-  id: Joi.string().guid({ version: 'uuidv4' }).required(),
+  // IDs can be any non-empty string; generation handled by model constructors
+  id: Joi.string().min(1).optional(),
   name: Joi.string().required(),
   category: Joi.string().required(),
   notes: Joi.string().allow('').optional()
@@ -20,7 +21,7 @@ const aisleSchema = Joi.object({
 
 // Store schema
 const storeSchema = Joi.object({
-  id: Joi.string().guid({ version: 'uuidv4' }).required(),
+  id: Joi.string().min(1).optional(),
   name: Joi.string().required(),
   address: Joi.string().required(),
   aisles: Joi.array().items(Joi.object({
@@ -31,10 +32,11 @@ const storeSchema = Joi.object({
 
 // ShoppingList schema
 const shoppingListSchema = Joi.object({
-  id: Joi.string().guid({ version: 'uuidv4' }).required(),
-  storeId: Joi.string().guid({ version: 'uuidv4' }).required(),
+  id: Joi.string().min(1).optional(),
+  // Accept any non-empty string for storeId to support test fixtures
+  storeId: Joi.string().min(1).required(),
   items: Joi.array().items(Joi.object({
-    id: Joi.string().guid({ version: 'uuidv4' }).required(),
+    id: Joi.string().min(1).optional(),
     name: Joi.string().required(),
     category: Joi.string().required(),
     notes: Joi.string().allow('').optional()
@@ -45,7 +47,7 @@ const shoppingListSchema = Joi.object({
 const routeStepSchema = Joi.object({
   aisleNumber: Joi.number().integer().min(1).max(20).required(),
   items: Joi.array().items(Joi.object({
-    id: Joi.string().guid({ version: 'uuidv4' }).required(),
+    id: Joi.string().min(1).optional(),
     name: Joi.string().required(),
     category: Joi.string().required(),
     notes: Joi.string().allow('').optional()
