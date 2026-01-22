@@ -7,12 +7,12 @@ const cors = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  
+
   // Handle preflight requests
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
-  
+
   next();
 };
 
@@ -52,17 +52,17 @@ app.use('/api/route', routeRoutes);
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  
+
   // Handle validation errors
   if (err.name === 'ValidationError') {
     return res.status(400).json({ error: err.message });
   }
-  
+
   // Handle not found errors
   if (err.message && err.message.includes('not found')) {
     return res.status(404).json({ error: err.message });
   }
-  
+
   // Default to 500 server error
   res.status(500).json({
     error: 'Internal Server Error',
@@ -81,19 +81,23 @@ async function startServer() {
     // Seed the database
     const { itemCount, storeCount, totalAisles } = await seedData();
     console.log(`Seeded ${itemCount} items across ${storeCount} stores with ${totalAisles} total aisles`);
-    
+
     // Start the server
-    app.listen(PORT, () => {
+    const server = app.listen(PORT, () => {
       console.log(`Grocery API server running on port ${PORT}`);
     });
+    return server;
   } catch (error) {
     console.error('Failed to start server:', error);
     process.exit(1);
   }
 }
 
-// Start the server
-startServer();
+// Only start the server when not running in test environment
+if (process.env.NODE_ENV !== 'test' && require.main === module) {
+  startServer();
+}
 
-// Export app for testing
+// Export app (and starter) for testing
 module.exports = app;
+module.exports.startServer = startServer;
