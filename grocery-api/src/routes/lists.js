@@ -19,11 +19,11 @@ router.get('/', (req, res) => {
  */
 router.get('/:id', (req, res) => {
   const list = datastore.getShoppingListById(req.params.id);
-  
+
   if (!list) {
     return res.status(404).json({ error: `Shopping list not found with ID: ${req.params.id}` });
   }
-  
+
   res.json(list);
 });
 
@@ -37,9 +37,6 @@ router.post('/', (req, res) => {
       return res.status(400).json({ error: `Store not found with ID: ${req.body.storeId}` });
     }
 
-    // Add UUID if not provided
-    const { v4: uuidv4 } = require('uuid');
-    
     // Process items - convert from string IDs to objects if needed
     let processedItems = [];
     if (Array.isArray(req.body.items)) {
@@ -58,9 +55,8 @@ router.post('/', (req, res) => {
       }).filter(item => item !== null); // Remove any null items
     }
 
-    // Extract only the allowed fields
+    // Extract only the allowed fields (do not add id here; datastore/model will generate it)
     const listData = {
-      id: req.body.id || uuidv4(),
       storeId: req.body.storeId,
       items: processedItems
     };
@@ -72,12 +68,12 @@ router.post('/', (req, res) => {
       allowUnknown: true, // Allow additional fields
       stripUnknown: true  // Remove unknown fields
     });
-    
+
     if (error) {
       console.error('Validation error:', error.message);
       return res.status(400).json({ error: error.message });
     }
-    
+
     const newList = datastore.addShoppingList(listData);
     res.status(201).json(newList);
   } catch (err) {
@@ -97,15 +93,15 @@ router.put('/:id', (req, res) => {
     }
 
     // Validate request body
-    const { error } = shoppingListSchema.validate({ ...req.body, id: req.params.id }, { 
+    const { error } = shoppingListSchema.validate({ ...req.body, id: req.params.id }, {
       allowUnknown: true,
       stripUnknown: true
     });
-    
+
     if (error) {
       return res.status(400).json({ error: error.message });
     }
-    
+
     const updatedList = datastore.updateShoppingList(req.params.id, req.body);
     res.json(updatedList);
   } catch (err) {
@@ -121,11 +117,11 @@ router.put('/:id', (req, res) => {
  */
 router.delete('/:id', (req, res) => {
   const deleted = datastore.deleteShoppingList(req.params.id);
-  
+
   if (!deleted) {
     return res.status(404).json({ error: `Shopping list not found with ID: ${req.params.id}` });
   }
-  
+
   res.status(204).end();
 });
 
@@ -135,18 +131,18 @@ router.delete('/:id', (req, res) => {
 router.post('/:id/share', (req, res) => {
   try {
     const list = datastore.getShoppingListById(req.params.id);
-    
+
     if (!list) {
       return res.status(404).json({ error: `Shopping list not found with ID: ${req.params.id}` });
     }
-    
+
     // Generate a short-lived token for sharing
     const token = generateShareToken(list.id);
-    
+
     // Create a shareable URL
     const baseUrl = `${req.protocol}://${req.get('host')}`;
     const shareUrl = `${baseUrl}/api/shared/${token}`;
-    
+
     res.json({
       token,
       shareUrl,
@@ -165,21 +161,21 @@ router.get('/shared/:token', (req, res) => {
   try {
     // Verify the share token and extract the list ID
     const listId = verifyShareToken(req.params.token);
-    
+
     // Get the shopping list
     const list = datastore.getShoppingListById(listId);
-    
+
     if (!list) {
       return res.status(404).json({ error: 'Shared shopping list not found' });
     }
-    
+
     res.json({
       list,
       shared: true
     });
   } catch (err) {
-    console.error('Error accessing shared shopping list:', err);
-    res.status(401).json({ error: err.message });
+    console.error('Error accessing shared list:', err);
+    res.status(400).json({ error: err.message });
   }
 });
 

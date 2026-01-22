@@ -43,14 +43,13 @@ function MarkdownEditor({ value, onChange, placeholder }) {
         }
       } catch (error) {
         console.error('Error rendering markdown:', error);
-        // Fallback to simple rendering
-        setPreview(`<p>${markdown}</p>`);
+        // On error, clear preview to avoid rendering unsanitized content
+        setPreview('');
       }
     };
 
-    // For demo purposes, we'll just set a simple HTML preview
-    // This simulates what would happen with the API call
-    setPreview(`<p>${markdown}</p>`);
+    // Always use sanitized preview; in demo mode, sanitize basic paragraph wrapper
+    setPreview(DOMPurify.sanitize(`<p>${markdown}</p>`));
   }, [markdown]);
 
   const handleChange = (e) => {

@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "enabled": true,
+  "log_levels": {
+    "security_workflow": "DEBUG",
+    "tool_calls": "DEBUG",
+    "context_tracking": "DEBUG",
+    "dev_sessions": "INFO"
+  },
+  "output_formats": {
+    "console": false,
+    "json_files": true,
+    "structured_logs": true
+  },
+  "retention": {
+    "max_files_per_category": 50,
+    "max_age_days": 30
+  },
+  "tracking": {
+    "duplicate_detection": true,
+    "context_propagation": true,
+    "tool_call_patterns": true,
+    "osv_scanner_analysis": true
+  }
+}
