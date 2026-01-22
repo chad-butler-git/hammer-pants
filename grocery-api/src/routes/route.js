@@ -44,19 +44,7 @@ router.post('/', (req, res) => {
       return item;
     });
 
-    // Validate that all items exist in the chosen store
-    items.forEach(item => {
-      let itemInStore = false;
-      store.aisles.forEach(aisle => {
-        if (aisle.categories.includes(item.category)) {
-          itemInStore = true;
-        }
-      });
-
-      if (!itemInStore) {
-        throw new Error(`Item "${item.name}" (category: ${item.category}) is not available in store "${store.name}"`);
-      }
-    });
+    // Do not enforce that items exist in store aisles here; planner will handle uncategorized items
 
     // Get the appropriate planner and generate the route
     const planner = getPlanner(req.body.plannerType || "linear");
