@@ -61,3 +61,10 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+# Helix SCR - sensitive directories (do not commit)
+.helix/config/
+.helix/logs/
+.helix/agents/
+.helix/sessions/
+.helix/relationships/
+# .helix/context/ is intentionally NOT ignored - it contains security audit data
