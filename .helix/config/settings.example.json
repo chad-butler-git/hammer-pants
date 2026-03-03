@@ -1,0 +1,13 @@
+{
+  "api_key_openai": "",
+  "debug_mode": false,
+  "default_mode": "security",
+  "llm_provider": "openai",
+  "max_file_size_mb": 10,
+  "max_grep_results": 1000,
+  "max_iterations": 15,
+  "model_name": "gpt-4o-mini",
+  "setup_completed": false,
+  "setup_version": "0.3.0",
+  "tool_timeout": 30
+}

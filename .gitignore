@@ -61,3 +61,5 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+# Helix local settings (contains secrets)
+.helix/config/settings.json
