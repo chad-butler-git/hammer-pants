@@ -16,7 +16,7 @@
     "grocery-shared": "file:../grocery-shared",
     "joi": "^17.13.3",
     "jsonwebtoken": "8.5.1",
-    "lodash": "4.17.19",
+    "lodash": "^4.17.23",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
