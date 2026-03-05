@@ -21,17 +21,17 @@ describe('Shopping Lists API Routes', () => {
     it('should return all shopping lists', async () => {
       const mockLists = [
         { 
-          id: '1', 
-          storeId: 'store1',
+          id: '550e8400-e29b-41d4-a716-446655440301', 
+          storeId: '550e8400-e29b-41d4-a716-446655440201',
           items: [
-            { id: 'item1', name: 'Apples', category: 'Fruits' }
+            { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' }
           ]
         },
         { 
-          id: '2', 
-          storeId: 'store2',
+          id: '550e8400-e29b-41d4-a716-446655440302', 
+          storeId: '550e8400-e29b-41d4-a716-446655440202',
           items: [
-            { id: 'item2', name: 'Milk', category: 'Dairy' }
+            { id: '550e8400-e29b-41d4-a716-446655440102', name: 'Milk', category: 'Dairy' }
           ]
         }
       ];
@@ -79,15 +79,15 @@ describe('Shopping Lists API Routes', () => {
   describe('POST /api/lists', () => {
     it('should create a new shopping list with valid data', async () => {
       const newList = { 
-        storeId: 'store1',
+        storeId: '550e8400-e29b-41d4-a716-446655440201',
         items: [
-          { id: 'item1', name: 'Apples', category: 'Fruits' }
+          { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' }
         ]
       };
       
-      const createdList = { id: '3', ...newList };
+      const createdList = { id: '550e8400-e29b-41d4-a716-446655440303', ...newList };
       
-      datastore.getStoreById.mockReturnValue({ id: 'store1' });
+      datastore.getStoreById.mockReturnValue({ id: '550e8400-e29b-41d4-a716-446655440201' });
       datastore.addShoppingList.mockReturnValue(createdList);
       
       const res = await request(app)
@@ -101,9 +101,9 @@ describe('Shopping Lists API Routes', () => {
 
     it('should return 400 when store does not exist', async () => {
       const newList = { 
-        storeId: 'nonexistent',
+        storeId: '550e8400-e29b-41d4-a716-446655440399',
         items: [
-          { id: 'item1', name: 'Apples', category: 'Fruits' }
+          { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' }
         ]
       };
       
@@ -137,34 +137,34 @@ describe('Shopping Lists API Routes', () => {
   describe('PUT /api/lists/:id', () => {
     it('should update a shopping list with valid data', async () => {
       const updatedList = { 
-        id: '1', 
-        storeId: 'store1',
+        id: '550e8400-e29b-41d4-a716-446655440301', 
+        storeId: '550e8400-e29b-41d4-a716-446655440201',
         items: [
-          { id: 'item1', name: 'Apples', category: 'Fruits' },
-          { id: 'item3', name: 'Bananas', category: 'Fruits' }
+          { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' },
+          { id: '550e8400-e29b-41d4-a716-446655440103', name: 'Bananas', category: 'Fruits' }
         ]
       };
       
-      datastore.getStoreById.mockReturnValue({ id: 'store1' });
+      datastore.getStoreById.mockReturnValue({ id: '550e8400-e29b-41d4-a716-446655440201' });
       datastore.updateShoppingList.mockReturnValue(updatedList);
       
       const res = await request(app)
         .put('/api/lists/1')
         .send({ 
-          storeId: 'store1',
+          storeId: '550e8400-e29b-41d4-a716-446655440201',
           items: [
-            { id: 'item1', name: 'Apples', category: 'Fruits' },
-            { id: 'item3', name: 'Bananas', category: 'Fruits' }
+            { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' },
+            { id: '550e8400-e29b-41d4-a716-446655440103', name: 'Bananas', category: 'Fruits' }
           ]
         });
       
       expect(res.statusCode).toBe(200);
       expect(res.body).toEqual(updatedList);
       expect(datastore.updateShoppingList).toHaveBeenCalledWith('1', { 
-        storeId: 'store1',
+        storeId: '550e8400-e29b-41d4-a716-446655440201',
         items: [
-          { id: 'item1', name: 'Apples', category: 'Fruits' },
-          { id: 'item3', name: 'Bananas', category: 'Fruits' }
+          { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' },
+          { id: '550e8400-e29b-41d4-a716-446655440103', name: 'Bananas', category: 'Fruits' }
         ]
       });
     });

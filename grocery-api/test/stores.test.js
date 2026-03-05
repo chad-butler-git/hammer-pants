@@ -20,13 +20,13 @@ describe('Stores API Routes', () => {
     it('should return all stores', async () => {
       const mockStores = [
         { 
-          id: '1', 
+          id: '550e8400-e29b-41d4-a716-446655440201', 
           name: 'Grocery Store 1', 
           address: '123 Main St',
           aisles: [{ number: 1, categories: ['Fruits'] }]
         },
         { 
-          id: '2', 
+          id: '550e8400-e29b-41d4-a716-446655440202', 
           name: 'Grocery Store 2', 
           address: '456 Oak Ave',
           aisles: [{ number: 1, categories: ['Dairy'] }]
@@ -46,7 +46,7 @@ describe('Stores API Routes', () => {
   describe('GET /api/stores/:id', () => {
     it('should return a single store when it exists', async () => {
       const mockStore = { 
-        id: '1', 
+        id: '550e8400-e29b-41d4-a716-446655440201', 
         name: 'Grocery Store 1', 
         address: '123 Main St',
         aisles: [{ number: 1, categories: ['Fruits'] }]
@@ -80,7 +80,7 @@ describe('Stores API Routes', () => {
         aisles: [{ number: 1, categories: ['Produce'] }]
       };
       
-      const createdStore = { id: '3', ...newStore };
+      const createdStore = { id: '550e8400-e29b-41d4-a716-446655440203', ...newStore };
       
       datastore.addStore.mockReturnValue(createdStore);
       
@@ -112,7 +112,7 @@ describe('Stores API Routes', () => {
   describe('PUT /api/stores/:id', () => {
     it('should update a store with valid data', async () => {
       const updatedStore = { 
-        id: '1', 
+        id: '550e8400-e29b-41d4-a716-446655440201', 
         name: 'Updated Store', 
         address: '123 Main St',
         aisles: [{ number: 1, categories: ['Fruits', 'Vegetables'] }]
