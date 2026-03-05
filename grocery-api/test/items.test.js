@@ -19,8 +19,8 @@ describe('Items API Routes', () => {
   describe('GET /api/items', () => {
     it('should return all items', async () => {
       const mockItems = [
-        { id: '1', name: 'Apples', category: 'Fruits' },
-        { id: '2', name: 'Milk', category: 'Dairy' }
+        { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' },
+        { id: '550e8400-e29b-41d4-a716-446655440102', name: 'Milk', category: 'Dairy' }
       ];
       
       datastore.getItems.mockReturnValue(mockItems);
@@ -35,7 +35,7 @@ describe('Items API Routes', () => {
 
   describe('GET /api/items/:id', () => {
     it('should return a single item when it exists', async () => {
-      const mockItem = { id: '1', name: 'Apples', category: 'Fruits' };
+      const mockItem = { id: '550e8400-e29b-41d4-a716-446655440101', name: 'Apples', category: 'Fruits' };
       
       datastore.getItemById.mockReturnValue(mockItem);
       
