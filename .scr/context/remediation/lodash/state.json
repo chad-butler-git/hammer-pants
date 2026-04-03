@@ -1,0 +1,14 @@
+{
+  "package": "lodash",
+  "lockfile": "grocery-api/package-lock.json",
+  "package_manager": "npm",
+  "phase": "awaiting_approval",
+  "target_version": "4.18.1",
+  "cves": [
+    "GHSA-35jh-r3h4-6jhm",
+    "GHSA-r5fr-rjxr-66jc",
+    "GHSA-29mw-wpgm-hmr9",
+    "GHSA-xxjr-mmjv-4gpg",
+    "GHSA-f23m-r3pf-42rh"
+  ]
+}

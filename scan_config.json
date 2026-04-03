@@ -1,0 +1,8 @@
+{
+  "lockfile_preference": {
+    "include": [
+      "**/package-lock.json"
+    ],
+    "exclude": []
+  }
+}

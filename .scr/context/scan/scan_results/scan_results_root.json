@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "scan_date": "2026-04-03T17:58:42Z",
+    "lockfile_path": "./package-lock.json",
+    "total_packages": 2,
+    "tools_used": [
+      "osv-scanner",
+      "lockfile-parser"
+    ]
+  },
+  "vulnerabilities": null,
+  "summary": {
+    "by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "by_type": {
+      "direct": 0,
+      "transitive": 0
+    },
+    "total_vulnerabilities": 0
+  }
+}

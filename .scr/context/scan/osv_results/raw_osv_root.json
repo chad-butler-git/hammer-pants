@@ -1,0 +1,10 @@
+Scanned /home/ubuntu/scr/hammerpants/package-lock.json file as a package-lock.json and found 1 package
+{
+  "results": [],
+  "experimental_config": {
+    "licenses": {
+      "summary": false,
+      "allowlist": null
+    }
+  }
+}
