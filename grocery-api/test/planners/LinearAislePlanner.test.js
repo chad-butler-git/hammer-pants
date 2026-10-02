@@ -12,7 +12,7 @@ describe('LinearAislePlanner', () => {
     it('should group items by aisle and sort by aisle number ascending', () => {
       // Mock store with aisles in non-sequential order
       const store = {
-        id: 'store1',
+        id: '550e8400-e29b-41d4-a716-446655440010',
         name: 'Test Store',
         address: '123 Test St',
         aisles: [
@@ -24,9 +24,9 @@ describe('LinearAislePlanner', () => {
       
       // Mock items
       const items = [
-        { id: 'item1', name: 'Milk', category: 'Dairy' },
-        { id: 'item2', name: 'Apples', category: 'Fruits' },
-        { id: 'item3', name: 'Bread', category: 'Bakery' }
+        { id: '550e8400-e29b-41d4-a716-446655440011', name: 'Milk', category: 'Dairy' },
+        { id: '550e8400-e29b-41d4-a716-446655440012', name: 'Apples', category: 'Fruits' },
+        { id: '550e8400-e29b-41d4-a716-446655440013', name: 'Bread', category: 'Bakery' }
       ];
       
       const route = planner.plan(store, items);
@@ -52,7 +52,7 @@ describe('LinearAislePlanner', () => {
     it('should handle items with categories not matching any aisle', () => {
       // Mock store with aisles
       const store = {
-        id: 'store1',
+        id: '550e8400-e29b-41d4-a716-446655440020',
         name: 'Test Store',
         address: '123 Test St',
         aisles: [
@@ -63,9 +63,9 @@ describe('LinearAislePlanner', () => {
       
       // Mock items including one with no matching aisle
       const items = [
-        { id: 'item1', name: 'Apples', category: 'Fruits' },
-        { id: 'item2', name: 'Milk', category: 'Dairy' },
-        { id: 'item3', name: 'Cereal', category: 'Breakfast' }
+        { id: '550e8400-e29b-41d4-a716-446655440021', name: 'Apples', category: 'Fruits' },
+        { id: '550e8400-e29b-41d4-a716-446655440022', name: 'Milk', category: 'Dairy' },
+        { id: '550e8400-e29b-41d4-a716-446655440023', name: 'Cereal', category: 'Breakfast' }
       ];
       
       const route = planner.plan(store, items);

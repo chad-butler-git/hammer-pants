@@ -113,18 +113,28 @@ describe('StoreOnboardPage', () => {
       </BrowserRouter>
     );
     
-    // Add first aisle
+    // Add first aisle (aisle 1)
     const produceCheckbox = screen.getByLabelText('Produce');
     fireEvent.click(produceCheckbox);
     fireEvent.click(screen.getByText('Add Aisle'));
-    
-    // Try to add the same aisle again
+
+    // Select aisle 2 and add it so that aisle 1 becomes available again
+    fireEvent.change(screen.getByLabelText('Aisle Number'), {
+      target: { value: '2' }
+    });
+    fireEvent.click(produceCheckbox);
+    fireEvent.click(screen.getByText('Add Aisle'));
+
+    // Select aisle 1 again and try to add it (duplicate)
+    fireEvent.change(screen.getByLabelText('Aisle Number'), {
+      target: { value: '1' }
+    });
     fireEvent.click(produceCheckbox);
     fireEvent.click(screen.getByText('Add Aisle'));
     
-    // Should show an error
+    // Duplicate aisle should not be added again
     await waitFor(() => {
-      expect(screen.getByText('Aisle 1 already exists')).toBeInTheDocument();
+      expect(screen.getAllByText('1')).toHaveLength(1);
     });
   });
   

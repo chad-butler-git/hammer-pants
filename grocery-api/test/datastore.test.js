@@ -17,6 +17,7 @@ describe('DataStore', () => {
     describe('Item Operations', () => {
       test('should add and retrieve an item', () => {
         const item = datastore.addItem({
+          id: '550e8400-e29b-41d4-a716-446655440000',
           name: 'Test Item',
           category: 'Test Category'
         });
@@ -31,6 +32,7 @@ describe('DataStore', () => {
 
       test('should update an item', () => {
         const item = datastore.addItem({
+          id: '550e8400-e29b-41d4-a716-446655440000',
           name: 'Test Item',
           category: 'Test Category'
         });
@@ -50,6 +52,7 @@ describe('DataStore', () => {
 
       test('should delete an item', () => {
         const item = datastore.addItem({
+          id: '550e8400-e29b-41d4-a716-446655440000',
           name: 'Test Item',
           category: 'Test Category'
         });
@@ -74,6 +77,7 @@ describe('DataStore', () => {
     describe('Store Operations', () => {
       test('should add and retrieve a store', () => {
         const store = datastore.addStore({
+          id: '550e8400-e29b-41d4-a716-446655440001',
           name: 'Test Store',
           address: 'Test Address',
           aisles: [{ number: 1, categories: ['Test Category'] }]

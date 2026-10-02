@@ -63,3 +63,11 @@ build/
 Thumbs.db
 # Local SCR workspace (generated)
 .scr/
+
+# SCR - sensitive files (do not commit)
+.scr/settings.json
+
+# SCR - optional exclusions (uncomment if needed)
+# .scr/agents/          # Uncomment to exclude custom agent definitions
+
+# .scr/context/ is intentionally NOT ignored - it contains security audit data
