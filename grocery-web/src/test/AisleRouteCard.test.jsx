@@ -99,7 +99,7 @@ describe('AisleRouteCard', () => {
     );
     
     // Check that the incomplete step has blue border
-    const incompleteCard = screen.getByText('Step 1: Dairy').closest('div');
+    const incompleteCard = screen.getByText('Step 1: Dairy').closest('div.p-4');
     expect(incompleteCard).toHaveClass('border-blue-500');
     expect(incompleteCard).not.toHaveClass('border-green-500');
     expect(incompleteCard).not.toHaveClass('bg-green-50');
@@ -114,7 +114,7 @@ describe('AisleRouteCard', () => {
     );
     
     // Check that the completed step has green border and background
-    const completeCard = screen.getByText('Step 1: Dairy').closest('div');
+    const completeCard = screen.getByText('Step 1: Dairy').closest('div.p-4');
     expect(completeCard).toHaveClass('border-green-500');
     expect(completeCard).toHaveClass('bg-green-50');
     expect(completeCard).not.toHaveClass('border-blue-500');

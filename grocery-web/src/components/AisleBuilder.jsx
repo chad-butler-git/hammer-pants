@@ -58,13 +58,13 @@ function AisleBuilder({ onAisleAdded, existingAisles = [] }) {
 
   const handleAddAisle = () => {
     // Validation
-    if (selectedCategories.length === 0) {
-      setError('Please select at least one category for this aisle');
+    if (existingAisles.some(aisle => aisle.number === selectedAisle)) {
+      setError(`Aisle ${selectedAisle} already exists`);
       return;
     }
 
-    if (existingAisles.some(aisle => aisle.number === selectedAisle)) {
-      setError(`Aisle ${selectedAisle} already exists`);
+    if (selectedCategories.length === 0) {
+      setError('Please select at least one category for this aisle');
       return;
     }
 
@@ -122,7 +122,7 @@ function AisleBuilder({ onAisleAdded, existingAisles = [] }) {
             type="button"
             onClick={handleAddAisle}
             className="mt-8 w-full px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 disabled:bg-green-300"
-            disabled={availableAisles.length === 0 || selectedCategories.length === 0}
+            disabled={availableAisles.length === 0}
           >
             Add Aisle
           </button>

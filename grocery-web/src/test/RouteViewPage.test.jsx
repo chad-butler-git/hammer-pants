@@ -200,7 +200,7 @@ describe('RouteViewPage', () => {
     );
     
     // Check that it shows the loading message
-    expect(screen.getByText('Generating your shopping route...')).toBeInTheDocument();
+    expect(screen.getByText(/Calculating optimal shopping route/i)).toBeInTheDocument();
   });
   
   it('shows empty state when no route is available', () => {
